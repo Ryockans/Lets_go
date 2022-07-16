@@ -1,0 +1,26 @@
+.footer{
+  padding: 38px 25px 20px;
+  display: grid;
+  @media (min-width: $tablet-width) {
+    padding: 50px 40px 26px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+.footer__logo{
+  margin-bottom: 40px;
+  justify-self: center;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    justify-self: start;
+  }
+}
+
+.footer__media{
+  margin-bottom: 50px;
+  justify-self: center;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

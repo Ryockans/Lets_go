@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <title>Погнали?</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="icon" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="page__body">
+<header class="page__header">
+  <div class="header container">
+    <a href="index.html" class="header__logo logo -header"></a>
+    <button class="header__button" type="button" onclick="showMenu(menuIndex)">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="header__navigation -resolution-hidden">
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link -about" data-hover="О сервисе">
+            О сервисе
+          </a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="form.html" class="navigation__link -form" data-hover="Направления">
+            Направления
+          </a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="catalog.html" class="navigation__link -catalog" data-hover="Попутчики">
+            Попутчики
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#" class="header__authorization button -menu  -resolution-hidden">
+      Авторизация
+    </a>
+
+
+    <div class="header__contacts  contacts -menu -resolution-hidden">
+      <a class="contacts__link " href="tel:+78005558628">
+        <p class="contacts__icon-wrapper -phone -menu">
+
+          <svg class="contacts__icon  -menu" width="36" height="34" viewBox="0 0 36 34" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path class="contacts__icon-property" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 2.17236C12.4071 2.17236 6.80078 3.1177 4.76656 5.00191C3.07881 6.56509 2.5162 9.32664 2.32655 11.0751C2.32655 11.0751 2.30042 11.2479 2.30042 11.3222C2.30042 12.0079 2.88902 12.5578 3.60866 12.5578C3.69369 12.5578 6.84016 12.3168 8.73714 12.1686C8.78279 12.1623 8.8288 12.1562 8.87445 12.1439C9.58099 12.1255 10.1502 11.5817 10.1502 10.9083L10.1566 8.47406C10.1566 7.72035 10.8044 7.11481 11.6025 7.11481H24.3974C25.1957 7.11481 25.8436 7.72028 25.8436 8.47406L25.85 10.9083C25.85 11.5817 26.4192 12.1255 27.1257 12.1439C27.171 12.1563 27.217 12.1623 27.2632 12.1686C29.1603 12.3167 32.3067 12.5578 32.3915 12.5578C33.1108 12.5578 33.6998 12.0079 33.6998 11.3222C33.6998 11.2479 33.6737 11.0751 33.6737 11.0751C33.4839 9.32664 32.922 6.56516 31.2341 5.00191C29.1993 3.1177 23.5929 2.17236 18 2.17236ZM18 18.2355C16.5543 18.2355 15.3834 19.3413 15.3834 20.7067C15.3834 22.0721 16.5543 23.1778 18 23.1778C19.4457 23.1778 20.6166 22.0721 20.6166 20.7067C20.6166 19.3413 19.4457 18.2355 18 18.2355ZM16.0376 12.6751V11.1306C16.0376 10.2781 15.3048 9.58613 14.4023 9.58613C13.4997 9.58613 12.7669 10.2782 12.7669 11.1306V12.6751L3.94202 21.5779C3.3339 22.1402 2.95439 22.9245 2.95439 23.7897V26.2671C2.95439 27.6325 4.1254 28.7383 5.57102 28.7383H6.22521V30.2829C6.22521 31.1354 6.95802 31.8273 7.86062 31.8273C8.76321 31.8273 9.49595 31.1354 9.49595 30.2829V28.7383H26.5041V30.2829C26.5041 31.1354 27.2366 31.8273 28.1396 31.8273C29.0422 31.8273 29.7748 31.1354 29.7748 30.2829V28.7383H30.4289C31.8746 28.7383 33.0455 27.6325 33.0455 26.2671V23.7897C33.0455 22.9245 32.6661 22.1401 32.0579 21.5779L23.2333 12.6751V11.1306C23.2333 10.2781 22.5005 9.58613 21.5979 9.58613C20.6953 9.58613 19.9626 10.2782 19.9626 11.1306V12.6751H16.0376ZM18 15.7643C20.8914 15.7643 23.2333 17.976 23.2333 20.7067C23.2333 23.4375 20.8915 25.6494 18 25.6494C15.1086 25.6494 12.7668 23.4375 12.7668 20.7067C12.7668 17.976 15.1086 15.7643 18 15.7643Z"
+                  fill="#FFD74B"/>
+          </svg>
+
+          <img class="contacts__icon -desktop-menu" width="18" height="18" src="assets/images/index/icon_call.svg"
+               alt="иконка звонящего телефона">
+
+        </p>
+        <span class="contacts__text -menu">8 800 555-86-28</span>
+      </a>
+      <a class="contacts__link " href="mailto:mail@htmlacademy.ru">
+        <p class="contacts__icon-wrapper -mail -menu">
+
+          <svg class="contacts__icon -menu" width="37" height="26" viewBox="0 0 37 26" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path class="contacts__icon-property" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M32.2786 20.9327L23.6178 13L32.2786 5.06731L31.0976 3.80529L18.5 15.3438L5.9024 3.80529L4.72137 5.06731L13.3822 13L4.72137 20.9327L5.9024 22.1947L14.6617 14.1719L18.5 17.6875L22.3383 14.1719L31.0976 22.1947L32.2786 20.9327ZM3.15193 0.5C1.5339 0.5 0.222229 1.89768 0.222229 3.61572V22.3843C0.222229 24.105 1.52326 25.5 3.15193 25.5H33.8481C35.4661 25.5 36.7778 24.1023 36.7778 22.3843V3.61572C36.7778 1.89496 35.4768 0.5 33.8481 0.5H3.15193Z"
+                  fill="#FFD74B"/>
+          </svg>
+
+          <img class="contacts__icon -desktop-menu" width="18" height="18" src="assets/images/index/icon_mail.svg"
+               alt="иконка конверта">
+
+        </p>
+        <span class="contacts__text -menu">mail@htmlacademy.ru</span>
+      </a>
+    </div>
+
+
+    <ul class="header__media media -resolution-hidden">
+      <li class="media__item">
+        <a class="media__link" href="#">
+          <img class="media__icon" src="assets/images/common/icon_facebook.svg" alt="Иконка Facebook">
+        </a>
+      </li>
+
+      <li class="media__item">
+        <a class="media__link" href="#">
+          <img class="media__icon" src="assets/images/common/icon_vkontakte.svg" alt="Иконка VK">
+        </a>
+      </li>
+
+      <li class="media__item">
+        <a class="media__link" href="#">
+          <img class="media__icon" src="assets/images/common/icon_instagram.svg" alt="Иконка Instagram">
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+</header>
+<main class="page__main">
+  <div class="background-wrapper -headline -form">
+    <h1 class="page__headline -form container">Направления</h1>
+  </div>
+
+  <div class="background-wrapper -alternate -profile">
+    <div class="background-wrapper__substrate -resolution-hidden"></div>
+    <section class="profile container">
+      <div class="profile__level user-level -form">
+        <svg
+            class="user-level__progress -form"
+            height="60"
+            width="60"
+        >
+          <circle
+              class="user-level__progress-ring -progress-80 -form"
+              stroke-width="4"
+              stroke="#FF8D30"
+              fill="transparent"
+              r="28"
+              cx="30"
+              cy="30"
+          />
+        </svg>
+        <p class="user-level__number -form">80</p>
+        <p class="user-level__text -form">level</p>
+      </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="assets/images/form/photo-desktop.jpg 1x, assets/images/form/photo-desktop@2x.jpg 2x">
+        <img class="profile__avatar" src="assets/images/form/photo.jpg" width="100" height="100"
+          srcset="assets/images/form/photo@2x.jpg 2x"
+             alt="Фото пользователя">
+      </picture>
+      <button class="profile__button button -change">
+        <span class="button__text -predesktop"> сменить </span> фото
+      </button>
+      <div class="profile__tags">
+        <label for="profile__tags" class="profile__legend -tags">тэги</label>
+        <textarea id="profile__tags" class="profile__tags-area">#бургер #бар #футбол #концерт #крафт</textarea>
+      </div>
+      <div class="profile__transports">
+        <h2 class="profile__legend -transport">транспорт</h2>
+        <ul class="profile__transport-list">
+          <li class="profile__transport transport -form" data-hover="Авиаперелет">
+            <input type="checkbox" id="checkbox-plane" class="visually-hidden transport__checkbox" checked>
+            <label class="transport__label" for="checkbox-plane">
+              <img class="transport__icon" src="assets/images/catalog/icon_plane.svg" alt="иконка самолета" width="17"
+                   height="16">
+            </label>
+          </li>
+
+          <li class="profile__transport transport -form" data-hover="Автотранспорт">
+            <input type="checkbox" id="checkbox-car" class="visually-hidden transport__checkbox" checked>
+            <label class="transport__label" for="checkbox-car">
+              <img class="transport__icon" src="assets/images/catalog/icon_bus.svg" alt="иконка автобуса" width="17"
+                   height="16">
+            </label>
+          </li>
+
+          <li class="profile__transport transport -form" data-hover="Велосипед">
+            <input type="checkbox" id="checkbox-bike" class="visually-hidden transport__checkbox">
+            <label class="transport__label" for="checkbox-bike">
+              <img class="transport__icon" src="assets/images/catalog/icon_bicycle.svg" alt="иконка велосипеда"
+                   width="17"
+                   height="16">
+            </label>
+          </li>
+
+          <li class="profile__transport transport -form" data-hover="Пешком">
+            <input type="checkbox" id="checkbox-by-feet" class="visually-hidden transport__checkbox" checked>
+            <label class="transport__label" for="checkbox-by-feet">
+              <img class="transport__icon" src="assets/images/catalog/icon_run.svg" alt="иконка бегущего человечка"
+                   width="17" height="16">
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="background-wrapper -alternate -my-plans">
+    <section class="my-plans container">
+      <h2 class="my-plans__headline">Мои планы</h2>
+      <ul class="my-plans__list">
+        <li class="my-plans__item">
+          <div class="plan-card">
+            <h3 class="plan-card__headline">
+              <span class="plan-card__number">1.</span>
+              Франция, Италия
+            </h3>
+            <p class="plan-card__text -companions">3 попутчика</p>
+            <p class="plan-card__text -date">26 мар — 29 мар</p>
+            <button class="plan-card__change" type="button">Изменить</button>
+          </div>
+        </li>
+
+        <li class="my-plans__item">
+          <div class="plan-card">
+            <h3 class="plan-card__headline">
+              <span class="plan-card__number">2.</span>
+              Таиланд, Индонезия
+            </h3>
+            <p class="plan-card__text -companions">1 попутчик</p>
+            <p class="plan-card__text -date">1 июл — 15 июл</p>
+            <button class="plan-card__change" type="button">Изменить</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="background-wrapper -alternate -new-plan">
+    <section class="new-plan container">
+      <h2 class="new-plan__headline">Добавить план</h2>
+      <form class="new-plan__form" id="new-plan__form">
+        <div class="step -first -current" id="step-one">
+          <h3 class="step__headline">Шаг 1.
+            <span class="step__headline-desc">Даты пребывания</span>
+          </h3>
+          <p class="step__text">Укажите предпочтительное количество попутчиков, которых
+            вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+
+          <ul class="step__indication indication">
+            <li class="indication__item -current" data-desktop="Даты"></li>
+            <li class="indication__item" data-desktop="Маршрут"></li>
+            <li class="indication__item" data-desktop="Развлечения"></li>
+          </ul>
+
+          <div class="step__controls control">
+            <div class="control__item">
+              <label class="control__label -companions" for="step-one__companions">Ищу попутчиков:</label>
+              <div class="control__field">
+                <button class="control__button -minus" type="button"></button>
+                <input class="control__input -companions" id="step-one__companions" type="number" value="2">
+                <button class="control__button -plus" type="button"></button>
+              </div>
+
+            </div>
+
+            <div class="control__item">
+              <label class="control__label -duration" for="step-one__duration">Длительность:</label>
+              <div class="control__field">
+                <button class="control__button -minus" type="button"></button>
+                <input class="control__input -duration" id="step-one__duration" type="number" value="3">
+                <button class="control__button -plus" type="button"></button>
+              </div>
+
+            </div>
+
+            <div class="control__item">
+              <input class="control__input -children" id="step-one__children" type="checkbox" checked>
+              <label class="control__label -children" for="step-one__children">Можно с детьми</label>
+            </div>
+
+            <div class="control__item">
+              <label class="control__label visually-hidden" for="step-one__month">Выберите месяц</label>
+              <div class="control__field">
+                <button class="control__button -backward" type="button">
+                  <img class="control__icon" src="assets/images/form/icon-backward.svg" alt="предыдущий месяц">
+                </button>
+                <input class="control__input -month" type="month" id="step-one__month" value="2019-03">
+                <button class="control__button -forward" type="button">
+                  <img class="control__icon" src="assets/images/form/icon-forward.svg" alt="следующий месяц">
+                </button>
+              </div>
+              <table class="control__calendar calendar">
+                <tr class="calendar__week">
+                  <th class="calendar__day-name">П
+                    <span class="calendar__day-letter">н</span>
+                  </th>
+                  <th class="calendar__day-name">В
+                    <span class="calendar__day-letter">т</span>
+                  </th>
+                  <th class="calendar__day-name">С
+                    <span class="calendar__day-letter">р</span>
+                  </th>
+                  <th class="calendar__day-name">Ч
+                    <span class="calendar__day-letter">т</span>
+                  </th>
+                  <th class="calendar__day-name">П
+                    <span class="calendar__day-letter">т</span>
+                  </th>
+                  <th class="calendar__day-name -weekend">С
+                    <span class="calendar__day-letter">б</span>
+                  </th>
+                  <th class="calendar__day-name -weekend">В
+                    <span class="calendar__day-letter">с</span>
+                  </th>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day -disabled">23</td>
+                  <td class="calendar__day -disabled">24</td>
+                  <td class="calendar__day -disabled">25</td>
+                  <td class="calendar__day -disabled">26</td>
+                  <td class="calendar__day -disabled">27</td>
+                  <td class="calendar__day -disabled">28</td>
+                  <td class="calendar__day -march -disabled ">1</td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day -disabled">2</td>
+                  <td class="calendar__day -disabled">3</td>
+                  <td class="calendar__day -disabled">4</td>
+                  <td class="calendar__day -disabled">5</td>
+                  <td class="calendar__day -disabled">6</td>
+                  <td class="calendar__day -disabled">7</td>
+                  <td class="calendar__day -disabled">8</td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day -disabled">9</td>
+                  <td class="calendar__day -disabled">10</td>
+                  <td class="calendar__day -disabled">11</td>
+                  <td class="calendar__day -disabled">12</td>
+                  <td class="calendar__day -disabled">13</td>
+                  <td class="calendar__day -disabled">14</td>
+                  <td class="calendar__day -disabled">15</td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day -disabled">16</td>
+                  <td class="calendar__day -disabled">17</td>
+                  <td class="calendar__day -disabled">18</td>
+                  <td class="calendar__day -disabled">19</td>
+                  <td class="calendar__day -disabled">20</td>
+                  <td class="calendar__day -disabled">21</td>
+                  <td class="calendar__day -disabled">22</td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day -disabled">23</td>
+                  <td class="calendar__day -disabled">24</td>
+                  <td class="calendar__day -disabled">25</td>
+                  <td class="calendar__day -chosen -first">26</td>
+                  <td class="calendar__day -chosen">27</td>
+                  <td class="calendar__day -chosen -last">28</td>
+                  <td class="calendar__day">29</td>
+                </tr>
+                <tr class="calendar__week">
+                  <td class="calendar__day">30</td>
+                  <td class="calendar__day">31</td>
+                  <td class="calendar__day -april">1</td>
+                  <td class="calendar__day">2</td>
+                  <td class="calendar__day">3</td>
+                  <td class="calendar__day">4</td>
+                  <td class="calendar__day">5</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <a href="#step-two" class="button -next-step" type="button" onclick="formStep(1)">
+            Следующий шаг
+            <svg class="button__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="button__icon-property" d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="step -second" id="step-two">
+          <h3 class="step__headline">Шаг 2.
+            <span class="step__headline-desc">Маршрут</span>
+          </h3>
+          <p class="step__text">Укажите страны, которые вы хотели бы посетить.<br class="tablet-break">
+            Это может быть одна или сразу
+            несколько.</p>
+
+          <ul class="step__indication indication">
+            <li class="indication__item" data-desktop="Даты"></li>
+            <li class="indication__item -current" data-desktop="Маршрут"></li>
+            <li class="indication__item" data-desktop="Развлечения"></li>
+          </ul>
+
+          <div class="step__select">
+
+            <div class="select">
+              <div class="select__field">
+                <p class="select__country"> Босния и Герцеговина</p>
+                <button class="select__show" type="button"></button>
+              </div>
+              <div class="select__flag">
+                <span class="flag -form -bosnia"></span>
+                <button class="select__delete" type="button"></button>
+              </div>
+            </div>
+
+            <div class="select">
+              <div class="select__field">
+                <p class="select__country">Чехия</p>
+                <button class="select__show" type="button"></button>
+              </div>
+              <div class="select__flag">
+                <span class="flag -form -czech"></span>
+                <button class="select__delete" type="button"></button>
+              </div>
+            </div>
+
+            <div class="select">
+              <p class="select__field -choose">Выберите страну
+                <button class="select__show -choose" type="button" onclick="showCountries(countriesIndex)"></button>
+                <button class="select__delete -choose" type="button"></button>
+              </p>
+              <div class="select__country-list choose-country visually-hidden">
+                <table class="choose-country__table">
+                  <tr>
+                    <td class="choose-country__letter -chosen">
+                      А
+                    </td>
+
+                    <td class="choose-country__letter ">
+                      Б
+                    </td>
+
+                    <td class="choose-country__letter">
+                      В
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Г
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Д
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="choose-country__letter">
+                      Е
+                    </td>
+
+                    <td class="choose-country__letter">
+                      З
+                    </td>
+
+                    <td class="choose-country__letter">
+                      И
+                    </td>
+
+                    <td class="choose-country__letter">
+                      К
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Л
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="choose-country__letter">
+                      М
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Н
+                    </td>
+
+                    <td class="choose-country__letter">
+                      О
+                    </td>
+
+                    <td class="choose-country__letter">
+                      П
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Р
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="choose-country__letter">
+                      С
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Т
+                    </td>
+
+                    <td class="choose-country__letter">
+                      У
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Ф
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Х
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="choose-country__letter">
+                      Ч
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Ш
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Э
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Ю
+                    </td>
+
+                    <td class="choose-country__letter">
+                      Я
+                    </td>
+                  </tr>
+                </table>
+                <div class="choose-country__variants">
+                  <ul class="choose-country__list -a -chosen">
+                    <li class="choose-country__item">
+                      Австралия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Австрия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Азербайджан
+                    </li>
+
+                    <li class="choose-country__item">
+                      Албания
+                    </li>
+
+                    <li class="choose-country__item">
+                      Алжир
+                    </li>
+
+                    <li class="choose-country__item">
+                      Ангола
+                    </li>
+
+                    <li class="choose-country__item">
+                      Андорра
+                    </li>
+
+                    <li class="choose-country__item">
+                      Антигуа и Барбуда
+                    </li>
+
+                    <li class="choose-country__item">
+                      Аргентина
+                    </li>
+
+                    <li class="choose-country__item">
+                      Армения
+                    </li>
+
+                    <li class="choose-country__item">
+                      Афганистан
+                    </li>
+                  </ul>
+
+                  <ul class="choose-country__list -b">
+
+                    <li class="choose-country__item">
+                      Багамские острова
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бангладеш
+                    </li>
+
+                    <li class="choose-country__item">
+                      Барбадос
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бахрейн
+                    </li>
+
+                    <li class="choose-country__item">
+                      Белоруссия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Белиз
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бельгия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бенин
+                    </li>
+
+                    <li class="choose-country__item">
+                      Болгария
+                    </li>
+
+                    <li class="choose-country__item">
+                      Боливия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Босния и Герцеговина
+                    </li>
+
+                    <li class="choose-country__item">
+                      Ботсвана
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бразилия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бруней
+                    </li>
+
+                    <li class="choose-country__item">
+                      Буркина-Фасо
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бурунди
+                    </li>
+
+                    <li class="choose-country__item">
+                      Бутан
+                    </li>
+                  </ul>
+
+                  <ul class="choose-country__list -v">
+
+                    <li class="choose-country__item">
+                      Вануату
+                    </li>
+
+                    <li class="choose-country__item">
+                      Великобритания
+                    </li>
+
+                    <li class="choose-country__item">
+                      Венгрия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Венесуэла
+                    </li>
+
+                    <li class="choose-country__item">
+                      Восточный Тимор
+                    </li>
+
+                    <li class="choose-country__item">
+                      Вьетнам
+                    </li>
+                  </ul>
+
+                  <ul class="choose-country__list -g">
+
+                    <li class="choose-country__item">
+                      Габон
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гаити
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гайана
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гамбия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гана
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гватемала
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гвинея
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гвинея-Бисау
+                    </li>
+
+                    <li class="choose-country__item">
+                      Германия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гондурас
+                    </li>
+
+                    <li class="choose-country__item">
+                      Гренада
+                    </li>
+
+                    <li class="choose-country__item">
+                      Греция
+                    </li>
+
+                    <li class="choose-country__item">
+                      Грузия
+                    </li>
+                  </ul>
+
+                  <ul class="choose-country__list -d">
+
+                    <li class="choose-country__item">
+                      Дания
+                    </li>
+
+                    <li class="choose-country__item">
+                      Джибути
+                    </li>
+
+                    <li class="choose-country__item">
+                      Доминика
+                    </li>
+
+                    <li class="choose-country__item">
+                      Доминикана
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -e">
+                    <li class="choose-country__item">
+                      Египет
+                    </li>
+                  </ul>
+
+                  <ul class="choose-country__list -z">
+
+                    <li class="choose-country__item">
+                      Замбия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Зимбабве
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -i">
+
+                    <li class="choose-country__item">
+                      Израиль
+                    </li>
+
+                    <li class="choose-country__item">
+                      Индия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Индонезия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Иордания
+                    </li>
+
+                    <li class="choose-country__item">
+                      Ирак
+                    </li>
+
+                    <li class="choose-country__item">
+                      Иран
+                    </li>
+
+                    <li class="choose-country__item">
+                      Ирландия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Исландия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Испания
+                    </li>
+
+                    <li class="choose-country__item">
+                      Италия
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -k">
+
+                    <li class="choose-country__item">
+                      Кабо-Верде
+                    </li>
+
+                    <li class="choose-country__item">
+                      Казахстан
+                    </li>
+
+                    <li class="choose-country__item">
+                      Камбоджа
+                    </li>
+
+                    <li class="choose-country__item">
+                      Камерун
+                    </li>
+
+                    <li class="choose-country__item">
+                      Канада
+                    </li>
+
+                    <li class="choose-country__item">
+                      Катар
+                    </li>
+
+                    <li class="choose-country__item">
+                      Кения
+                    </li>
+
+                    <li class="choose-country__item">
+                      Кипр
+                    </li>
+
+                    <li class="choose-country__item">
+                      Киргизия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Кирибати
+                    </li>
+
+                    <li class="choose-country__item">
+                      Китай
+                    </li>
+
+                    <li class="choose-country__item">
+                      Колумбия
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -l">
+
+                    <li class="choose-country__item">
+                      Лаос
+                    </li>
+
+                    <li class="choose-country__item">
+                      Латвия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Лесото
+                    </li>
+
+                    <li class="choose-country__item">
+                      Либерия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Ливан
+                    </li>
+
+                    <li class="choose-country__item">
+                      Ливия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Литва
+                    </li>
+
+                    <li class="choose-country__item">
+                      Лихтенштейн
+                    </li>
+
+                    <li class="choose-country__item">
+                      Люксембург
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -m">
+
+                    <li class="choose-country__item">
+                      Маврикий
+                    </li>
+
+                    <li class="choose-country__item">
+                      Мавритания
+                    </li>
+
+                    <li class="choose-country__item">
+                      Мадагаскар
+                    </li>
+
+                    <li class="choose-country__item">
+                      Малави
+                    </li>
+
+                    <li class="choose-country__item">
+                      Малайзия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Мали
+                    </li>
+
+                    <li class="choose-country__item">
+                      Мальдивы
+                    </li>
+
+                    <li class="choose-country__item">
+                      Мальта
+                    </li>
+
+                    <li class="choose-country__item">
+                      Марокко
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -n">
+
+                    <li class="choose-country__item">
+                      Намибия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Науру
+                    </li>
+
+                    <li class="choose-country__item">
+                      Непал
+                    </li>
+
+                    <li class="choose-country__item">
+                      Нигер
+                    </li>
+
+                    <li class="choose-country__item">
+                      Нигерия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Нидерланды
+                    </li>
+
+                    <li class="choose-country__item">
+                      Никарагуа
+                    </li>
+
+                    <li class="choose-country__item">
+                      Новая Зеландия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Норвегия
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -o">
+
+                    <li class="choose-country__item">
+                      ОАЭ
+                    </li>
+
+                    <li class="choose-country__item">
+                      Оман
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -p">
+
+                    <li class="choose-country__item">
+                      Пакистан
+                    </li>
+
+                    <li class="choose-country__item">
+                      Палау
+                    </li>
+
+                    <li class="choose-country__item">
+                      Панама
+                    </li>
+
+                    <li class="choose-country__item">
+                      Папуа - Новая Гвинея
+                    </li>
+
+                    <li class="choose-country__item">
+                      Парагвай
+                    </li>
+
+                    <li class="choose-country__item">
+                      Перу
+                    </li>
+
+                    <li class="choose-country__item">
+                      Польша
+                    </li>
+
+                    <li class="choose-country__item">
+                      Португалия
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -r">
+
+                    <li class="choose-country__item">
+                      Руанда
+                    </li>
+
+                    <li class="choose-country__item">
+                      Румыния
+                    </li>
+
+                    <li class="choose-country__item">
+                      Россия
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -s">
+
+                    <li class="choose-country__item">
+                      Сальвадор
+                    </li>
+
+                    <li class="choose-country__item">
+                      Самоа
+                    </li>
+
+                    <li class="choose-country__item">
+                      Сан-Марино
+                    </li>
+
+                    <li class="choose-country__item">
+                      Саудовская Аравия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Сейшелы
+                    </li>
+
+                    <li class="choose-country__item">
+                      Сенегал
+                    </li>
+
+                    <li class="choose-country__item">
+                      Сербия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Сингапур
+                    </li>
+
+                    <li class="choose-country__item">
+                      Сирия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Словакия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Словения
+                    </li>
+
+                    <li class="choose-country__item">
+                      США
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -t">
+
+                    <li class="choose-country__item">
+                      Таджикистан
+                    </li>
+
+                    <li class="choose-country__item">
+                      Таиланд
+                    </li>
+
+                    <li class="choose-country__item">
+                      Танзания
+                    </li>
+
+                    <li class="choose-country__item">
+                      Того
+                    </li>
+
+                    <li class="choose-country__item">
+                      Тонга
+                    </li>
+
+                    <li class="choose-country__item">
+                      Тринидад и Тобаго
+                    </li>
+
+                    <li class="choose-country__item">
+                      Тувалу
+                    </li>
+
+                    <li class="choose-country__item">
+                      Тунис
+                    </li>
+
+                    <li class="choose-country__item">
+                      Туркмения
+                    </li>
+
+                    <li class="choose-country__item">
+                      Турция
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -u">
+
+                    <li class="choose-country__item">
+                      Уганда
+                    </li>
+
+                    <li class="choose-country__item">
+                      Узбекистан
+                    </li>
+
+                    <li class="choose-country__item">
+                      Украина
+                    </li>
+
+                    <li class="choose-country__item">
+                      Уругвай
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -f">
+
+                    <li class="choose-country__item">
+                      Фиджи
+                    </li>
+
+                    <li class="choose-country__item">
+                      Филиппины
+                    </li>
+
+                    <li class="choose-country__item">
+                      Финляндия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Франция
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -h">
+
+                    <li class="choose-country__item">
+                      Хорватия
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -ch">
+
+                    <li class="choose-country__item">
+                      Чад
+                    </li>
+
+                    <li class="choose-country__item">
+                      Черногория
+                    </li>
+
+                    <li class="choose-country__item">
+                      Чехия
+                    </li>
+
+                    <li class="choose-country__item">
+                      Чили
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -sh">
+
+                    <li class="choose-country__item">
+                      Швейцария
+                    </li>
+
+                    <li class="choose-country__item">
+                      Швеция
+                    </li>
+
+                    <li class="choose-country__item">
+                      Шри-Ланка
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -ae">
+
+                    <li class="choose-country__item">
+                      Эквадор
+                    </li>
+
+                    <li class="choose-country__item">
+                      Эритрея
+                    </li>
+
+                    <li class="choose-country__item">
+                      Эсватини
+                    </li>
+
+                    <li class="choose-country__item">
+                      Эстония
+                    </li>
+
+                    <li class="choose-country__item">
+                      Эфиопия
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -yu">
+
+                    <li class="choose-country__item">
+                      ЮАР
+                    </li>
+
+                    <li class="choose-country__item">
+                      Южный Судан
+                    </li>
+
+                  </ul>
+
+                  <ul class="choose-country__list -ya">
+
+                    <li class="choose-country__item">
+                      Ямайка
+                    </li>
+
+                    <li class="choose-country__item">
+                      Япония
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="select -add">
+              <p class="select__field -add">Добавить страну
+                <button class="select__add" type="button"></button>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="step__buttons">
+            <a href="#step-three" class="step__next button -next-step" type="button" onclick="formStep(2)">Следующий шаг
+              <svg class="button__icon -step" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path class="button__icon-property" d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
+              </svg>
+            </a>
+            <a href="#step-one" class="step__previous button -previous-step" type="button" onclick="formStep(0)">
+              <svg class="button__icon -step -previous" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path class="button__icon-property" d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
+              </svg>
+              На шаг назад
+            </a>
+          </div>
+
+        </div>
+
+        <div class="step -third" id="step-three">
+          <h3 class="step__headline">Шаг 3.
+            <span class="step__headline-desc">Развлечения</span>
+          </h3>
+
+          <p class="step__text">Наконец, расскажите о своих планах времяпровождения. <br class="tablet-break">
+            Можно писать в свободной форме и
+            ставить тэги. </p>
+
+          <ul class="step__indication indication">
+            <li class="indication__item" data-desktop="Даты"></li>
+            <li class="indication__item" data-desktop="Маршрут"></li>
+            <li class="indication__item -current" data-desktop="Развлечения"></li>
+          </ul>
+
+          <div class="step__plan">
+
+            <div class="journey-point">
+              <label class="journey-point__country" for="journey-point__bosnia">Босния и Герцеговина</label>
+              <div class="journey-point__flag flag -form -bosnia"></div>
+              <textarea class="journey-point__plan" id="journey-point__bosnia" placeholder="План действий"></textarea>
+            </div>
+
+            <div class="journey-point">
+              <label class="journey-point__country" for="journey-point__czech">Чехия</label>
+              <div class="journey-point__flag flag -form -czech"></div>
+              <textarea class="journey-point__plan" id="journey-point__czech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+              </textarea>
+            </div>
+          </div>
+
+          <div class="step__buttons">
+            <button class="step__next button -next-step" type="submit">Отправить
+              <svg class="button__icon -step" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path class="button__icon-property" d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
+              </svg>
+            </button>
+            <a href="#step-two" class="step__previous button -previous-step" type="button" onclick="formStep(1)">
+              <svg class="button__icon -step -previous" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path class="button__icon-property" d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
+              </svg>
+              На шаг назад
+            </a>
+          </div>
+
+        </div>
+      </form>
+    </section>
+  </div>
+
+</main>
+
+<footer class="page__footer">
+  <div class="footer container">
+    <a class="footer__logo logo -alternate">
+      <img class="logo__image" src="assets/images/common/logo_mobile_menu.png" width="100" height="15"
+           alt="Логотип «Погнали?»">
+    </a>
+
+    <ul class="footer__media media -footer">
+      <li class="media__item">
+        <a class="media__link -footer" href="#">
+          <img class="media__icon" src="assets/images/common/icon_facebook.svg" alt="Иконка Facebook">
+        </a>
+      </li>
+
+      <li class="media__item">
+        <a class="media__link -footer" href="#">
+          <img class="media__icon" src="assets/images/common/icon_vkontakte.svg" alt="Иконка VK">
+        </a>
+      </li>
+
+      <li class="media__item">
+        <a class="media__link -footer" href="#">
+          <img class="media__icon" src="assets/images/common/icon_instagram.svg" alt="Иконка Instagram">
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M13.6426 0.101368L13.5 0.0859375L0 1.46443V25.5657L13.5 33.3892L27 25.5657V1.46443L13.6426 0.101368ZM25.2344 24.5885L13.5 31.3883L1.76561 24.5885V14.7093L13.4507 21.4834L13.4701 22.711L5.45351 18.0646L5.44295 19.2648L13.4894 23.9747L13.5088 25.2348L5.46408 20.5747L5.45351 21.7749L13.5 26.4847L21.6239 21.7509V20.5507V16.6484L25.2432 14.543L25.2344 24.5885ZM25.2344 13.2622L22.0147 15.1036L20.5325 15.9609L13.4666 11.8597L13.456 13.0599L19.4957 16.5593L19.4429 16.5901L19.3126 16.6638L18.4536 17.1456L13.4666 14.2583L13.456 15.4585L17.3921 17.7389L16.4591 18.3355L16.438 18.3475L13.4666 16.6416L13.456 17.8417L15.4029 18.9528L13.4155 20.1152L1.7973 13.3839L13.4349 6.56862L25.2344 13.2622ZM25.2344 12.062L13.4401 5.28786L1.76561 12.0552V3.01438L13.5 1.8142L25.2344 3.01438V12.062Z"
+            fill="#192144"/>
+      </svg>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/header-menu.js" type="javascript"></script>
+<script src="assets/js/show-countries-form.js" type="javascript"></script>
+<script src="assets/js/form-steps.js" type="javascript"></script>
+
+</body>
+</html>

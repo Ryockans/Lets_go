@@ -1,0 +1,219 @@
+.countries-filter {
+  padding: 60+19px 25px 0;
+  grid-template-columns: 1fr min-content;
+  font: var(--font-countries-filter-main);
+  color: var(--color-countries-filter-text);
+
+  @media (min-width: $tablet-width) {
+    padding: 60+60px 75px 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 60px 0;
+    grid-template-columns: max-content 1fr min-content;
+  }
+}
+
+.countries-filter__header-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 99vw;
+    position: relative;
+    left: calc(50% - 49.5vw);
+    grid-template-columns: max-content 1fr min-content;
+    background-color: var(--color-country-filter-substrate);
+    border-bottom-right-radius: var(--radius-main);
+    border-bottom-left-radius: var(--radius-main);
+  }
+}
+
+.countries-filter__header {
+  margin: 0 7px 15px 25px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px+60px 120px 60px 80+22+25px;
+    grid-template-columns: max-content 1fr min-content;
+
+  }
+}
+
+.countries-filter__headline {
+  text-transform: uppercase;
+
+  &::before {
+    margin-left: -25px;
+    margin-right: 12px;
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-image: url("../images/catalog/icon_filter.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    @media (min-width: $desktop-width) {
+      margin-right: 22px;
+      width: 23px;
+      height: 15px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+    display: inline;
+    grid-column: 1/2;
+  }
+}
+
+.countries-filter__button {
+  margin-top: 9px;
+  border: none;
+  width: 17px;
+  height: 3px;
+  background-color: transparent;
+  background-image: url("../images/catalog/filter-expand.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+  &.-toggled {
+    margin-top: 3px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/catalog/icon_close.svg");
+
+    &::before {
+      content: "Свернуть";
+      display: none;
+      font: var(--font-countries-filter-main);
+      color: var(--color-countries-filter-text);
+      text-transform: uppercase;
+      @media (min-width: $tablet-width) {
+        display: block;
+        position: absolute;
+        right: 60+20px;
+        top: -2px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "Показать все";
+    display: none;
+    font: var(--font-countries-filter-main);
+    color: var(--color-countries-filter-text);
+    text-transform: uppercase;
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: max-content;
+      position: absolute;
+      right: 45px;
+      top: -9px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 6px;
+  }
+}
+
+.countries-filter__world-parts {
+  display: none;
+  margin-top: 38px;
+  grid-column: 1/3;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
+  &.-toggled{
+    display: grid;
+  }
+}
+
+.countries-filter__list {
+  margin: 10px 25px 0;
+  display: none;
+  grid-column: 1/3;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px -25px;
+  }
+  &.-toggled{
+    display: grid;
+  }
+}
+
+
+.countries-filter__close {
+  margin-bottom: 28px;
+  display: none;
+  padding-left: calc(50% - 25px);
+  position: relative;
+  grid-column: 1/3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 50px);
+    display: block;
+    height: 1.5px;
+    width: 15px;
+    background-color: var(--color-countries-filter-text);
+    transform: rotate(-45deg);
+    border-radius: 10em;
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      left: calc(50% - 60px);
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 50px);
+    display: block;
+    height: 1.5px;
+    width: 15px;
+    background-color: var(--color-countries-filter-text);
+    transform: rotate(45deg);
+    border-radius: 10em;
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      left: calc(50% - 60px);
+    }
+  }
+  &.-toggled{
+    display: flex;
+  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 79px;
+  }
+
+}

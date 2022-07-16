@@ -1,0 +1,11 @@
+.mobile-break{
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tablet-break{
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

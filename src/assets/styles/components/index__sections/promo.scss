@@ -1,0 +1,90 @@
+.promo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 60px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+    row-gap: 100px;
+  }
+}
+
+.promo__title{
+  margin: 20px auto 245px;
+  width: 238px;
+  font: var(--font-page-headline);
+  color: var(--color-text-main);
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 86px;
+    width: 400px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 67px;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    text-align: start;
+    justify-self: start;
+  }
+}
+
+.promo__contacts{
+  margin-bottom: 28px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.promo__cite{
+  font: var(--font-index-text);
+  color: var(--color-text-main);
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: auto;
+    grid-row: 1/2;
+    grid-column: 4/5;
+  }
+}
+
+.promo__cite-text{
+  margin-left: 49px;
+  margin-bottom: 18px;
+  max-width: 151px;
+  @media (min-width: $tablet-width) {
+    margin-left: 72px;
+    margin-bottom: 45px;
+    max-width: 264px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    max-width: max-content;
+  }
+}
+
+.promo__cite-author{
+  margin-left: 49px;
+  margin-bottom: 29px;
+  max-width: 161px;
+  font: var(--font-index-important);
+  @media (min-width: $tablet-width) {
+    margin-left: 72px;
+    margin-bottom: 211px;
+    max-width: 251px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: max-content;
+  }
+}
+
+.promo__instruction{
+  margin-bottom: 39px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 123px;
+    grid-row: 2/3;
+    grid-column: 1/5;
+  }
+}

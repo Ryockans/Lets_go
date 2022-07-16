@@ -1,0 +1,32 @@
+.new-plan{
+  padding: 28px 25px 30+60px;
+  @media (min-width: $tablet-width) {
+    padding: 53px 35+40px 63px+60px;
+
+  }
+  @media (min-width: $desktop-width) {
+    padding: 55px 60px 70px+60px;
+  }
+}
+
+.new-plan__headline{
+  margin-bottom: 29px;
+  font: var(--font-form-headline);
+  color: var(--color-text-tertiary);
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 69px;
+    margin-bottom: 54px;
+  }
+}
+
+.new-plan__form{
+  display: grid;
+  row-gap: 10px;
+  @media (min-width: $tablet-width) {
+    row-gap: 51px;
+
+  }
+}

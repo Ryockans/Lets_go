@@ -1,0 +1,22 @@
+.world-parts {
+  row-gap: 9px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 28px;
+  }
+
+}
+
+.world-parts__link {
+  color: inherit;
+  text-transform: uppercase;
+  opacity: 0.3;
+  &.-chosen{
+    opacity: 1;
+  }
+  &:hover{
+    opacity: 0.7;
+  }
+}

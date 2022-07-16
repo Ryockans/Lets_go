@@ -1,0 +1,22 @@
+.location{
+  padding: 60+33px 25px 35px;
+  @media (min-width: $tablet-width) {
+    padding: 60+48px 40+35px 84px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 60+55px 60+75px 61px 301px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.location__contacts{
+  margin-bottom: 32px;
+  align-items: center;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}

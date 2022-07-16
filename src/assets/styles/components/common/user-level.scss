@@ -1,0 +1,178 @@
+.user-level {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--color-user-level-background);
+  color: var(--color-text-main);
+
+  &.-form {
+    width: 100px;
+    height: 100px;
+    background: none;
+    color: var(--color-text-secondary);
+    @media (min-width: $desktop-width) {
+      color: var(--color-text-main);
+    }
+  }
+  &.-catalog{
+    width: 45px;
+    height: 45px;
+    background: none;
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.user-level__progress {
+  position: absolute;
+
+  &.-form {
+    width: 100px;
+    height: 100px;
+    @media (min-width: $tablet-width) {
+      width: 94px;
+      height: 94px;
+    }
+  }
+  &.-catalog{
+    width: 45px;
+    height: 45px;
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.user-level__progress-ring {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  $circumference: 3.14*2*28px;
+  &.-form {
+    r: 48px;
+    cx: 50px;
+    cy: 50px;
+    &.-progress-80{
+      $percent: 0.80;
+      $circumference: 3.14*2*48px;
+      stroke-dasharray: $circumference $percent*$circumference;
+      stroke-dashoffset: $circumference - $percent*$circumference;
+      @media (min-width: $tablet-width) {
+        $circumference: 3.14*2*45px;
+        stroke-dasharray: $circumference $percent*$circumference;
+        stroke-dashoffset: $circumference - $percent*$circumference;
+      }
+    }
+    @media (min-width: $tablet-width) {
+      r: 45px;
+      cx: 47px;
+      cy: 47px;
+    }
+  }
+  &.-catalog{
+    r: 20.5px;
+    cx: 22.5px;
+    cy: 22.5px;
+    &.-progress-99{
+      $percent: 0.99;
+      $circumference: 3.14*41px;
+      stroke-dasharray: $circumference $percent*$circumference;
+      stroke-dashoffset: $circumference - $percent*$circumference;
+      @media (min-width: $tablet-width) {
+        $circumference: 3.14*2*28px;
+        stroke-dasharray: $circumference $percent*$circumference;
+        stroke-dashoffset: $circumference - $percent*$circumference;
+      }
+    }
+    &.-progress-80{
+      $percent: 0.8;
+      $circumference: 3.14*41px;
+      stroke-dasharray: $circumference $percent*$circumference;
+      stroke-dashoffset: $circumference - $percent*$circumference;
+      @media (min-width: $tablet-width) {
+        $circumference: 3.14*2*28px;
+        stroke-dasharray: $circumference $percent*$circumference;
+        stroke-dashoffset: $circumference - $percent*$circumference;
+      }
+    }
+    &.-progress-25{
+      $percent: 0.25;
+      $circumference: 3.14*41px;
+      stroke-dasharray: $percent*$circumference $circumference ;
+      @media (min-width: $tablet-width) {
+        $circumference: 3.14*2*28px;
+        stroke-dasharray: $percent*$circumference $circumference ;
+      }
+    }
+    &.-progress-50{
+      $percent: 0.5;
+      $circumference: 3.14*41px;
+      stroke-dasharray: $circumference $percent*$circumference;
+      stroke-dashoffset: $circumference - $percent*$circumference;
+      @media (min-width: $tablet-width) {
+        $circumference: 3.14*2*28px;
+        stroke-dasharray: $circumference $percent*$circumference;
+        stroke-dashoffset: $circumference - $percent*$circumference;
+      }
+    }
+    @media (min-width: $tablet-width) {
+      r: 28px;
+      cx: 30px;
+      cy: 30px;
+    }
+  }
+
+  &.-progress-99 {
+    $percent: 0.99;
+    stroke-dasharray: $circumference $percent*$circumference;
+    stroke-dashoffset: $circumference - $percent*$circumference;
+  }
+
+  &.-progress-80 {
+    $percent: 0.80;
+    stroke-dasharray: $circumference $percent*$circumference;
+    stroke-dashoffset: $circumference - $percent*$circumference;
+  }
+}
+
+
+.user-level__number {
+  font: var(--font-user-level);
+  border-bottom: 1px solid var(--color-user-level-divider);
+  &.-form{
+    font: var(--font-user-level-form);
+    border-bottom: 1px solid var(--color-user-level-divider-form);
+    @media (min-width: $desktop-width) {
+      border-bottom: 1px solid var(--color-user-level-divider);
+    }
+  }
+  &.-catalog {
+    font: var(--font-catalog-card-level);
+    color: var(--color-text-tertiary);
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid var(--color-catalog-user-level-divider);
+    }
+  }
+}
+
+.user-level__text {
+  font: var(--font-user-level-text);
+  &.-form{
+    padding-top: 6px;
+    font: var(--font-user-level-text-form);
+  }
+  &.-catalog{
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+      color: var(--color-catalog-user-level-text);
+      opacity: 0.6;
+    }
+  }
+}

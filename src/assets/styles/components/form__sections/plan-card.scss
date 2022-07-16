@@ -1,0 +1,93 @@
+.plan-card {
+  padding: 20px 23px 23px;
+  width: 100%;
+  max-height: 154px;
+  background-color: var(--color-card-background);
+  border-radius: var(--radius-plan-card);
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: $desktop-width) {
+    padding: 40px 42px 38px;
+    grid-template-columns: max-content 1fr 200px 170px 230px;
+  }
+}
+
+.plan-card__headline {
+  margin-bottom: 20px;
+  font: var(--font-plan-card-headline);
+  color: var(--color-text-tertiary);
+  @media (min-width: $tablet-width) {
+    padding: 40px 32px 34px 40px;
+    display: flex;
+    justify-content: space-between;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    border-bottom: 1px solid var(--color-plan-card-divider);
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+    grid-column: 1/2;
+  }
+}
+
+.plan-card__number{
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+
+
+.plan-card__text {
+  text-transform: uppercase;
+  font: var(--font-plan-card-text);
+  color: var(--color-text-tertiary);
+
+  &.-companions {
+    margin-bottom: 5px;
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+    }
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      grid-column: 3/4;
+    }
+  }
+
+  &.-date {
+    margin-bottom: 24px;
+    @media (min-width: $tablet-width) {
+      justify-self: center;
+    }
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      grid-column: 4/5;
+    }
+  }
+}
+
+.plan-card__change {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font: var(--font-plan-card-text);
+  color: var(--color-text-plan-change);
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    align-self: start;
+    justify-self: end;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: 5/6;
+  }
+}

@@ -1,0 +1,139 @@
+.step {
+  display: none;
+  padding: 23px 25px 17px;
+  position: relative;
+  background-color: var(--color-card-background);
+  border-radius: var(--radius-form-step);
+  @media (min-width: $tablet-width) {
+    padding: 48px 40px 55px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 101px 159px 106px;
+  }
+
+  &.-current{
+    display: block;
+  }
+
+  &.-first {
+    padding-bottom: 23px;
+    @media (min-width: $tablet-width) {
+      padding-bottom: 55px
+    }
+    @media (min-width: $desktop-width) {
+      padding-bottom: 106px;
+    }
+  }
+
+  &.-second {
+    position: relative;
+  }
+}
+
+.step__headline {
+  margin-bottom: 15px;
+  font: var(--font-step-headline);
+  color: var(--color-text-tertiary);
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.step__text {
+  margin-bottom: 20px;
+  font: var(--font-step-text);
+  color: var(--color-text-alternate);
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+    margin-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
+    max-width: 590px;
+  }
+
+}
+
+.step__controls{
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid var(--color-form-divider);
+  }
+}
+
+.step__select {
+  margin-bottom: 25px;
+  display: grid;
+  row-gap: 22px;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 16px;
+    margin-bottom: 34px;
+    row-gap: 16px;
+    border-top: 1px solid var(--color-form-divider);
+  }
+  &::after{
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 395px;
+      background-color: var(--color-form-divider);
+    }
+    @media (min-width: $desktop-width) {
+      right: 227.5px;
+      left: auto;
+    }
+  }
+}
+
+
+.step__previous {
+  margin: 13px auto 0;
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
+}
+
+.step__plan {
+  margin-bottom: 22px;
+  display: grid;
+  row-gap: 27px;
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    margin-bottom: 47px;
+    row-gap: 42px;
+    border-top: 1px solid var(--color-form-divider);
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.step__buttons{
+  display: grid;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+.step__indication {
+  position: absolute;
+  top: -54px;
+  right: 18px;
+  @media (min-width: $tablet-width) {
+    top: -88px;
+    right: 0;
+  }
+  @media (min-width: $desktop-width) {
+    top: 104px;
+    right: 207px;
+  }
+}

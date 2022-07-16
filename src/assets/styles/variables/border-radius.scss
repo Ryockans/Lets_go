@@ -1,0 +1,35 @@
+:root {
+  --radius-main: 30px;
+  --radius-secondary: 10px;
+  --radius-tertiary: 25px;
+  --radius-modal: 20px;
+  --radius-headline-special: 20px;
+  --radius-profile-avatar: 50%;
+  --radius-field: 10px;
+  --radius-plan-card: 10px;
+  --radius-form-step: 10px;
+  --radius-form-input: 4px;
+  --radius-form-button: 20px;
+  --radius-catalog-button: 20px;
+  --radius-catalog: 20px;
+  --radius-catalog-avatar: 50%;
+  --radius-catalog-pagination: 20px;
+  --radius-checkbox: 4px;
+
+  @media (min-width: $tablet-width) {
+    --radius-main: 60px;
+    --radius-secondary: 20px;
+    --radius-headline-special: 60px;
+    --radius-profile-avatar: 10px;
+    --radius-form-step: 30px;
+    --radius-catalog-avatar: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --radius-modal: 30px;
+    --radius-profile-avatar: 20px;
+    --radius-form-step: 60px;
+    --radius-catalog: 40px;
+    --radius-catalog-avatar: 40px;
+  }
+}

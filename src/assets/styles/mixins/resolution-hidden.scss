@@ -1,0 +1,7 @@
+@mixin resolution-hidden{
+  &.-resolution-hidden{
+    @media (max-width: $desktop-width - 1px){
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.tariffs {
+  padding: 60+37px 25px 38px;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 45px;
+  @media (min-width: $tablet-width) {
+    row-gap: 0;
+    padding: 60+74px 40px 45px;
+    grid-template-columns: 90px 1fr 1fr;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 60+107px 60px 165px;
+
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+  }
+}
+
+.tariffs__headline {
+  max-width: 60px;
+  align-self: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font: var(--font-index-header);
+  color: var(--color-text-index-header);
+  @include additional-padding;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+    padding-left: 0;
+    max-width: max-content;
+    grid-column: 1/4;
+    justify-self: center;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+    grid-column: 1/5;
+  }
+}
+
+.tariffs__profile-image {
+  justify-self: end;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+    width: 198px;
+    height: 198px;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    justify-self: start;
+  }
+}
+
+.tariffs__list {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  font: var(--font-index-text);
+  color: var(--color-text-alternate);
+  @include additional-padding;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+    padding-left: 0;
+    grid-column: 1/4;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.tariffs__item {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  border-bottom: 1px solid var(--color-tariffs-border);
+  &:first-of-type{
+    border-top: 1px solid var(--color-tariffs-border);
+  }
+
+  &:first-of-type::after {
+    content: "1";
+    @include tariff-number;
+    color: var(--color-text-main);
+    background-color: var(--color-tariffs-first);
+  }
+
+  &:nth-of-type(2)::after {
+    content: "2";
+    @include tariff-number;
+    color: var(--color-text-main);
+    background-color: var(--color-tariffs-second);
+  }
+
+  &:last-of-type::after {
+    content: "3";
+    @include tariff-number;
+    color: var(--color-text-main);
+    background-color: var(--color-tariffs-third);
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 19px 0 16px;
+    grid-template-columns: 90px 1fr max-content;
+    grid-template-rows: 1fr
+  }
+}
+
+.tariffs__item-name {
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
+}
+
+.tariffs__item-price {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+}
+
+.tariffs__button {
+  justify-self: center;
+  position: relative;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  font: var(--font-index-important);
+  color: var(--color-tariffs-button);
+  background: none;
+  border: none;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+  @media (min-width: $tablet-width) {
+    margin-left: 89px;
+    justify-self: flex-start;
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+    justify-self: start;
+  }
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: url("../images/index/icon_businessman.svg");
+      position: absolute;
+      left: -89px;
+      bottom: 10px;
+    }
+    @media (min-width: $desktop-width) {
+      bottom: -25px;
+    }
+  }
+}
+
+

@@ -1,0 +1,497 @@
+.catalog-card {
+  padding-top: 15px;
+  padding-bottom: 23px;
+  width: 270px;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  position: relative;
+  border-radius: var(--radius-catalog);
+  background-color: var(--color-card-background);
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    width: 688px;
+    grid-template-columns: max-content max-content 1fr max-content;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 949px;
+    max-height: 285px;
+    grid-template-columns: max-content max-content 1fr 170px 103px ;
+  }
+}
+
+.catalog-card__picture{
+  transition: transform 0.5s;
+}
+
+.catalog-card__avatar {
+  margin-left: 18px;
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-catalog-avatar);
+  grid-column: 1/2;
+  grid-row: 1/3;
+  position: relative;
+  overflow: hidden;
+
+
+  &:hover {
+    .catalog-card__picture {
+      transform: scale(1.2);
+      object-fit: cover;
+
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+    width: 190px;
+    height: 190px;
+    grid-row: 1/4
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 285px;
+    height: 285px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+  }
+}
+
+.catalog-card__name {
+  margin-left: 16px;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  position: relative;
+  font: var(--font-catalog-card-name);
+  color: var(--color-text-tertiary);
+
+  &:hover{
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 22px;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-user-offline);
+    @media (min-width: $tablet-width) {
+      margin-left: 22px;
+      margin-bottom: 4px;
+      width: 8px;
+      height: 8px;
+      position: static;
+      display: inline-block;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      right: auto;
+      left: -46px;
+    }
+  }
+
+  &.-online::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 22px;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-user-online);
+    @media (min-width: $tablet-width) {
+      margin-left: 22px;
+      margin-bottom: 4px;
+      width: 8px;
+      height: 8px;
+      position: static;
+      display: inline-block;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      right: auto;
+      left: -46px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 33px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
+    margin-left: 62px;
+  }
+}
+
+.catalog-card__section {
+  position: relative;
+
+  &.-like {
+    margin-left: -19px;
+    display: flex;
+    align-items: end;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      align-self: start;
+      grid-column: 3/4;
+      grid-row: 3/4;
+      justify-self: start;
+    }
+  }
+
+  &.-tags {
+    margin-top: 13px;
+    margin-bottom: 16px;
+    margin-left: 26px;
+    max-width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    @media (min-width: $tablet-width) {
+      margin-top: 19px;
+      margin-bottom: 45px;
+      max-width: 226px;
+      grid-column: 2/4;
+      grid-row: 2/3;
+    }
+    @media (min-width: $desktop-width) {
+      margin-left: 62px;
+    }
+  }
+
+  &.-directions {
+    padding-top: 25px;
+    margin-bottom: 22px;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    border-top: 1px solid #EDEFF6;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-top: 31px;
+      grid-column: 1/5;
+      grid-row: 4/5;
+    }
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+      margin-top: 50px;
+      grid-column: 4/6;
+      grid-row: 1/3;
+      border: none;
+    }
+  }
+
+  &.-transport {
+    padding-top: 16px;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    border-top: 1px solid #EDEFF6;
+    @media (min-width: $tablet-width) {
+      padding-top: 2px;
+      border: none;
+      grid-column: 4/5;
+      grid-row: 1/3;
+    }
+    @media (min-width: $desktop-width) {
+      grid-row: 3/4;
+    }
+  }
+
+  &.-level {
+    margin-bottom: 14px;
+    grid-column: 3/4;
+    grid-row: 5/6;
+    border-top: 1px solid #EDEFF6;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      border: none;
+      grid-column: 4/5;
+      grid-row: 3/4;
+      justify-self: end;
+    }
+    @media (min-width: $desktop-width) {
+      margin-top: -5px;
+      grid-column: 5/6;
+    }
+  }
+}
+
+.catalog-card__like {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-catalog-like);
+
+  &:hover, &:active {
+    background-color: var(--color-catalog-like-hover);
+  }
+
+  &:active {
+    .catalog-card__like-icon {
+      opacity: 0.3;
+    }
+  }
+
+  &.-checked {
+    background-color: var(--color-catalog-like-checked);
+
+    .catalog-card__like-color {
+      fill: var(--color-catalog-like-heart);
+      fill-rule: nonzero;
+      clip-rule: nonzero;
+      opacity: 1;
+    }
+
+    &:hover, &:active {
+      background-color: var(--color-catalog-like-checked-hover);
+    }
+  }
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.catalog-card__like-icon {
+  @media (max-width: $tablet-width - 1) {
+    width: 12px;
+    height: 10px;
+  }
+}
+
+.catalog-card__like-counter {
+  margin-bottom: 7px;
+  margin-left: 5px;
+  font: var(--font-catalog-card-likes);
+  color: var(--color-catalog-like-counter);
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+.catalog-card__tag {
+  margin-right: 5px;
+  font: var(--font-catalog-card-tags);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.catalog-card__button {
+  grid-column: 1/4;
+  grid-row: 6/7;
+}
+
+.catalog-card__text {
+  padding: 0 10px;
+  text-transform: lowercase;
+  position: absolute;
+  top: -8px;
+  font: var(--font-catalog-card-text);
+  color: var(--color-text-alternate);
+  background-color: var(--color-card-background);
+
+  &.-directions {
+    left: 15px;
+    @media (min-width: $tablet-width) {
+      left: 84px;
+      display: block;
+    }
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &.-transport {
+    left: 15px;
+  }
+
+  &.-level {
+    right: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+}
+
+.catalog-card__directions {
+  margin-left: 25px;
+  display: grid;
+  row-gap: 10px;
+  @media (min-width: $tablet-width) {
+    margin-left: 36px;
+    display: flex;
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    margin-left: 0;
+  }
+}
+
+.catalog-card__direction {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font: var(--font-catalog-card-directions);
+  color: var(--color-text-tertiary);
+
+  &::before {
+    margin-right: 14px;
+    @include catalog-flag;
+  }
+
+  &.-sri-lanka {
+    &::before {
+      background-image: url("../images/common/flag-sri-lanka.png");
+    }
+  }
+
+  &.-thailand {
+    &::before {
+      background-image: url("../images/common/flag-thailand.png");
+    }
+  }
+
+  &.-seychelles {
+    &::before {
+      background-image: url("../images/common/flag-seychelles.png");
+    }
+  }
+
+  &.-belgium {
+    &::before {
+      background-image: url("../images/common/flag-belgium.png");
+    }
+  }
+
+  &.-czech {
+    &::before {
+      background-image: url("../images/common/flag-czech.png");
+    }
+  }
+
+  &.-usa {
+    &::before {
+      background-image: url("../images/common/flag-usa.png");
+    }
+  }
+
+  &.-australia {
+    &::before {
+      background-image: url("../images/common/flag-australia.png");
+    }
+  }
+
+  &.-dominica {
+    &::before {
+      background-image: url("../images/common/flag-dominica.png");
+    }
+  }
+
+  &.-uk {
+    &::before {
+      background-image: url("../images/common/flag-uk.png");
+    }
+  }
+
+  &.-germany {
+    &::before {
+      background-image: url("../images/common/flag-germany.png");
+    }
+  }
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+    margin-right: 13px;
+    &:first-of-type{
+      margin-left: 0;
+    }
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.catalog-card__transport-list {
+  margin-left: 21px;
+  display: grid;
+  column-gap: 1px;
+  grid-template-columns: repeat(4, min-content);
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    row-gap: 5px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    grid-template-columns: repeat(4, min-content);
+    column-gap: 10px;
+
+  }
+}
+
+.catalog-card__transport {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-catalog-transport);
+  @media (min-width: $tablet-width) {
+    width: min-content;
+    height: min-content;
+    background-color: transparent;
+  }
+}
+
+.catalog-card__level {
+  margin-top: 10px;
+  margin-right: 21px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 43px;
+    margin-bottom: 42px;
+  }
+}
+
+.catalog-card__button {
+  margin: 0 20px;
+  @media (min-width: $tablet-width) {
+    margin-left: 29px;
+    margin-right: 1px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 54px;
+  }
+}

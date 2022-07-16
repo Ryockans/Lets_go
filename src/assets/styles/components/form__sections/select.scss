@@ -1,0 +1,416 @@
+.select {
+  display: flex;
+  position: relative;
+
+  &::after {
+    content: url("../images/form/down-arrow.svg");
+    position: absolute;
+    right: 50.5px;
+    bottom: -20px;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:last-of-type {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.select__field {
+  padding-left: 11px;
+  width: 168px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  font: var(--font-step-input);
+  color: var(--color-text-tertiary);
+  border: 1px solid var(--color-form-field-border);
+  border-radius: var(--radius-form-input);
+
+  &:hover {
+    border: 1px solid var(--color-input-hover-border);
+  }
+
+  &.-choose {
+    width: 221px;
+    overflow: visible;
+
+    &::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      right: 49.5px;
+      top: 16px;
+      border: 1px solid var(--color-form-field-border);
+      background-color: var(--color-card-background);
+      @media (min-width: $tablet-width) {
+        width: 12px;
+        height: 12px;
+        top: 28px;
+        right: -27-7.5px;
+        z-index: 1;
+      }
+      @media (min-width: $desktop-width) {
+        right: -45-7.5px;
+      }
+    }
+
+    &.-toggled {
+      padding-left: 18px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border: none;
+      color: var(--color-text-main);
+      background-color: var(--color-form-select-toggled);
+
+      &::after {
+        @media (max-width: $tablet-width - 1px) {
+          display: none;
+        }
+        @media (min-width: $tablet-width) {
+          right: -27-6.5px;
+        }
+        @media screen {
+          right: -45-6.5px;
+        }
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 369px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 730px;
+    }
+  }
+
+  &.-add {
+    width: 100%;
+    overflow: visible;
+    border: none;
+    background-color: var(--color-form-add-country-background);
+
+    &:hover {
+      border: none;
+      background-color: var(--color-form-add-country-hover-background);
+    }
+
+    &::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      right: 50.5px;
+      top: 16px;
+      border: 1px solid var(--color-form-field-border);
+      background-color: var(--color-form-add-country-background);
+      @media (min-width: $tablet-width) {
+        width: 12px;
+        height: 12px;
+        top: 28px;
+        right: -27-6.5px;
+        z-index: 1;
+      }
+      @media (min-width: $desktop-width) {
+        right: -45-6.5px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 369px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 730px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 26px;
+    margin-right: 27px;
+    width: 369px;
+    height: 70px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 45px;
+    width: 730px;
+  }
+
+
+}
+
+.select__country {
+  width: 168px;
+  white-space: nowrap;
+  position: relative;
+  letter-spacing: 0.09em;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 36px;
+    position: absolute;
+    right: 13px;
+    top: -8px;
+    background-image: linear-gradient(to right, transparent, var(--color-card-background), var(--color-card-background), var(--color-card-background));
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
+
+.select__show {
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  right: 14px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/form/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &.-choose.-toggled {
+    width: 21px;
+    height: 21px;
+    background: none;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 5px;
+      display: block;
+      height: 1px;
+      width: 10px;
+      background-color: var(--color-form-delete-button-toggled);
+      transform: rotate(-45deg);
+      @media (min-width: $tablet-width) {
+        width: 20px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 5px;
+      display: block;
+      height: 1px;
+      width: 10px;
+      background-color: var(--color-form-delete-button-toggled);
+      transform: rotate(45deg);
+      @media (min-width: $tablet-width) {
+        width: 20px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 9px;
+    right: 26px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 20px;
+    height: 10px;
+    right: 25px;
+  }
+}
+
+.select__flag {
+  padding: 9px;
+  margin-left: -1px;
+  max-height: 42px;
+  position: relative;
+  border: 1px solid var(--color-form-field-border);
+  border-radius: var(--radius-form-input);
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: -4.5px;
+    top: 15px;
+    background-color: var(--color-text-tertiary);
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 14px;
+      top: 28px;
+      left: -7.5px;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-left: 27px;
+    padding-top: 11.5px;
+    border: none;
+    max-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+  }
+}
+
+.select__delete {
+  width: 21px;
+  height: 21px;
+  background-color: var(--color-form-delete-button);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  &:hover {
+    &::after, &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    &::after, &::before {
+      opacity: 0.05;
+    }
+  }
+
+  &.-toggled {
+    display: none;
+  }
+
+  &.-choose {
+    @media (min-width: $tablet-width) {
+      right: -176px;
+    }
+    @media (min-width: $desktop-width) {
+      right: -280px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    display: block;
+    height: 1px;
+    width: 10px;
+    opacity: 0.1;
+    background-color: var(--color-form-delete-cross);
+    transform: rotate(-45deg);
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 5px;
+    display: block;
+    height: 1px;
+    width: 10px;
+    opacity: 0.1;
+    background-color: var(--color-form-delete-cross);
+    transform: rotate(45deg);
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background: transparent;
+    border-radius: 0;
+    top: 26px;
+    right: -44px;
+  }
+  @media (min-width: $desktop-width) {
+    right: -122px;
+  }
+}
+
+.select__field.-add:hover .select__add {
+  opacity: 0.3;
+}
+
+.select__field.-add:active .select__add {
+  opacity: 0.1;
+}
+
+.select__add {
+  height: 14px;
+  background: none;
+  position: absolute;
+  border: none;
+  top: 12px;
+  right: 15px;
+  opacity: 0.2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 2px;
+    width: 14px;
+    background-color: var(--color-add-button);
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 2px;
+    width: 14px;
+    background-color: var(--color-add-button);
+    margin-bottom: -2px;
+    transform: rotate(90deg);
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 28px;
+    right: 25px;
+    top: 20px;
+  }
+}
+
+.select__country-list {
+  margin-top: 42px;
+  position: absolute;
+  z-index: 2;
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,11 @@
+.map{
+  margin-top: -30px;
+  margin-bottom: -30px;
+  display: block;
+  height: 424px;
+  position: relative;
+  z-index: -1;
+  @media (min-width: $tablet-width) {
+    height: 581px;
+  }
+}
