@@ -1,0 +1,21 @@
+{
+  "name": "lets_go",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ryockans/Lets_go.git",
+  "author": "Ryockans <pavekon99@yandex.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn parcel src/*.html",
+    "build": "sass --watch src/assets/styles/main.scss src/assets/styles/main.css"
+  },
+  "dependencies": {
+    "reset.css": "^2.0.2"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.6.0",
+    "@parcel/transformer-sass": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.6.0",
+    "parcel": "^2.6.0"
+  }
+}

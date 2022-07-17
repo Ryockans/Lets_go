@@ -1,0 +1,45 @@
+@mixin country-flag{
+  display: block;
+  content: "";
+  width: 35px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin direction-flag{
+  @include country-flag;
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+    right: -35px;
+    top: 17px;
+    left: auto;
+  }
+}
+
+@mixin form-flag{
+  @include country-flag;
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}
+
+@mixin catalog-flag{
+  display: block;
+  content: "";
+  width: 26px;
+  height: 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 24px;
+    border-radius: 4px;
+  }
+}

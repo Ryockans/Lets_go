@@ -1,0 +1,122 @@
+:root {
+  --font-family: 'Blogger Sans', Helvetica, Tahoma, sans-serif;
+
+  --font-page-headline: 700 36px/40px var(--font-family);
+  --font-index-header: 700 24px/24px var(--font-family);
+  --font-index-text: 300 16px/22px var(--font-family);
+  --font-index-important: 700 16px/22px var(--font-family);
+  --font-instruction: 700 18px/18px var(--font-family);
+  --font-card-header: 700 24px var(--font-family);
+  --font-card-captions: 500 16px/18px var(--font-family);
+  --font-button: 700 18px/18px var(--font-family);
+  --font-tooltip: 400 16px/16px var(--font-family);
+  --font-header-button: 700 18px/18px var(--font-family);
+  --font-card-tags: 16px/18px var(--font-family);
+  --font-user-level: 24px/24px var(--font-family);
+  --font-user-level-form: 700 38px/38px var(--font-family);
+  --font-user-level-text: 14px/14px var(--font-family);
+  --font-user-level-text-form: 18px/18px var(--font-family);
+  --font-index-form-input: 700 18px/18px var(--font-family);
+  --font-contacts: 700 16px/22px var(--font-family);
+  --font-form-headline: 700 24px/24px var(--font-family);
+  --font-form-legend: 500 16px/18px var(--font-family);
+  --font-modal-text: 300 16px/22px var(--font-family);
+  --font-indication:  20px/24px var(--font-family);
+
+  --font-plan-card-headline: 500 16px/16px var(--font-family);
+  --font-plan-card-text: 500 14px/14px var(--font-family);
+
+  --font-step-headline: 700 20px/20px var(--font-family);
+  --font-step-text: 16px/22px var(--font-family);
+  --font-step-label: 500 16px/16px var(--font-family);
+  --font-step-input: 500 14px/18px var(--font-family);
+  --font-step-checkbox: 15px/15px var(--font-family);
+  --font-step-country-point: 500 18px/18px var(--font-family);
+
+  --font-calendar-names: 14px/18px var(--font-family);
+  --font-caledar-days: 500 14px/18px var(--font-family);
+  --font-calendar-disabled: 14px/18px var(--font-family);
+
+  --font-countries-filter-main: 700 16px/18px var(--font-family);
+  --font-countries-filter-table: 500 14px/14px var(--font-family);
+
+  --font-filter-headline: 700 22px/22px var(--font-family);
+  --font-filter-label: 700 16px/18px var(--font-family);
+  --font-filter-point: 15px/20px var(--font-family);
+  --font-filter-range: 500 14px/14px var(--font-family);
+
+  --font-catalog-card-name: 700 20px/20px var(--font-family);
+  --font-catalog-card-tags: 15px/18px var(--font-family);
+  --font-catalog-card-directions: 500 15px/16px var(--font-family);
+  --font-catalog-card-text: 15px/16px var(--font-family);
+  --font-catalog-card-likes: 700 14px/16px var(--font-family);
+  --font-catalog-card-level: 700 24px/24px var(--font-family);
+  --font-catalog-card-button: 700 17px/17px var(--font-family);
+
+  --font-pagination: 700 20px/20px var(--font-family);
+
+  --font-navigation: 500 30px/35px var(--font-family);
+
+  --font-copyright: 18px/18px var(--font-family);
+
+}
+
+@media (min-width: $tablet-width) {
+  :root {
+    --font-header-button: 700 20px/20px var(--font-family);
+
+    --font-navigation: 500 60px/71px var(--font-family);
+    --font-page-headline: 700 60px/70px var(--font-family);
+    --font-contacts: 700 28px/28px var(--font-family);
+    --font-index-header: 700 45px/45px var(--font-family);
+    --font-index-text: 300 28px/33px var(--font-family);
+    --font-index-important: 700 21px/25px var(--font-family);
+    --font-instruction: 700 24px/24px var(--font-family);
+    --font-card-captions: 500 20px/20px var(--font-family);
+    --font-index-form-input: 700 24px/24px var(--font-family);
+    --font-button: 700 24px/24px var(--font-family);
+
+    --font-tooltip: 400 20px/20px var(--font-family);
+
+    --font-copyright: 20px/20px var(--font-family);
+    --font-form-headline: 700 36px/36px var(--font-family);
+    --font-form-legend: 500 20px/20px var(--font-family);
+    --font-modal-text: 300 22px/28px var(--font-family);
+
+    --font-plan-card-headline: 500 24px/24px var(--font-family);
+    --font-plan-card-text: 500 20px/20px var(--font-family);
+
+    --font-step-headline: 700 36px/36px var(--font-family);
+    --font-step-text: 20px/24px var(--font-family);
+    --font-step-label: 500 20px/18px var(--font-family);
+    --font-step-input: 500 20px/20px var(--font-family);
+    --font-step-checkbox: 20px/20px var(--font-family);
+    --font-step-country-point: 500 30px/30px var(--font-family);
+
+    --font-calendar-names: 18px/18px var(--font-family);
+    --font-caledar-days: 500 20px/20px var(--font-family);
+    --font-calendar-disabled: 18px/18px var(--font-family);
+
+    --font-countries-filter-main: 700 20px/20px var(--font-family);
+    --font-countries-filter-table: 700 60px/60px var(--font-family);
+
+    --font-filter-headline: 700 30px/30px var(--font-family);
+    --font-filter-label: 700 20px/20px var(--font-family);
+    --font-filter-point: 20px/20px var(--font-family);
+    --font-filter-range: 500 20px/20px var(--font-family);
+
+    --font-catalog-card-name: 700 30px/30px var(--font-family);
+    --font-catalog-card-tags: 20px/23px var(--font-family);
+    --font-catalog-card-directions: 500 20px/20px var(--font-family);
+    --font-catalog-card-likes: 700 20px/20px var(--font-family);
+    --font-catalog-card-button: 700 20px/20px var(--font-family);
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  :root {
+    --font-navigation: 500 20px/20px var(--font-family);
+    --font-caledar-days: 20px/20px var(--font-family);
+  }
+}

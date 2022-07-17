@@ -1,0 +1,234 @@
+.background-wrapper {
+  margin-top: -60px;
+  position: relative;
+  border-bottom-right-radius: var(--radius-main);
+  border-bottom-left-radius: var(--radius-main);
+
+  &.-promo {
+    margin-top: -1px;
+    background: linear-gradient(to top, var(--color-about-background), var(--color-about-background)) no-repeat,
+    url("../images/index/promo-mobile.png") no-repeat;
+    background-color: var(--color-promo-background);
+    background-size: 100% 279px, 320px auto;
+    background-position: bottom, center -70px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    z-index: 11;
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(to top, var(--color-about-background), var(--color-about-background)) no-repeat,
+      url("../images/index/promo-tablet.png") no-repeat;
+      background-color: var(--color-promo-background);
+      background-size: 100% 179px, auto;
+      background-position: bottom, center 241px;
+    }
+    @media (min-width: $desktop-width) {
+      background: url("../images/index/promo-desktop.png") no-repeat;
+      background-color: var(--color-promo-background);
+      background-size: auto;
+      background-position: 50% bottom;
+      border-bottom-right-radius: var(--radius-main);
+      border-bottom-left-radius: var(--radius-main);
+    }
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(to top, var(--color-about-background), var(--color-about-background)) no-repeat,
+      url("../images/index/promo-mobile@2x.png") no-repeat;
+      background-color: var(--color-promo-background);
+      background-size: 100% 279px, 320px auto;
+      background-position: bottom, center -70px;
+      @media (min-width: $tablet-width) {
+        background: linear-gradient(to top, var(--color-about-background), var(--color-about-background)) no-repeat,
+        url("../images/index/promo-tablet@2x.png") no-repeat;
+        background-color: var(--color-promo-background);
+        background-size: 100% 179px, auto 612px;
+        background-position: bottom, center 241px;
+      }
+      @media (min-width: $desktop-width) {
+        background: url("../images/index/promo-desktop@2x.png") no-repeat;
+        background-color: var(--color-promo-background);
+        background-size: 1800px auto;
+        background-position: 50% bottom;
+        border-bottom-right-radius: var(--radius-main);
+        border-bottom-left-radius: var(--radius-main);
+      }
+    }
+  }
+
+  &.-about {
+    background-color: var(--color-about-background);
+    background-image: url("../images/index/about-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 292px auto;
+    z-index: 10;
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/index/about-tablet.png");
+      background-position: center 117px;
+      background-size: 720px auto;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/index/about-desktop.png");
+      background-position: center bottom;
+      background-size: 1320px auto;
+    }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/index/about-mobile@2x.png");
+    }
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/index/about-tablet@2x.png");
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/index/about-desktop@2x.png");
+    }
+  }
+
+  &.-directions {
+    background-color: var(--color-directions-background);
+    z-index: 9;
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/index/directions-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center 140px;
+      background-size: 688px auto;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/index/directions-desktop.png");
+      background-position: 52% 150px;
+      background-size: 1320px auto;
+    }
+    @media (min-resolution: 2dppx) {
+      @media (min-width: $tablet-width) {
+        background-image: url("../images/index/directions-tablet@2x.png");
+      }
+      @media (min-width: $desktop-width) {
+        background-image: url("../images/index/directions-desktop@2x.png");
+      }
+    }
+  }
+
+  &.-companions {
+    background-image: url("../images/index/companions-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    background-size: 297px auto;
+    background-color: var(--color-companions-background);
+    z-index: 8;
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/index/companions-tablet.png");
+      background-position: center 140px;
+      background-size: 654px auto;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/index/companions-desktop.png");
+      background-position: calc(50% - 340px) 130px;
+      background-size: 630px auto;
+    }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/index/companions-mobile@2x.png");
+    }
+      @media (min-width: $tablet-width) {
+        background-image: url("../images/index/companions-tablet@2x.png");
+      }
+      @media (min-width: $desktop-width) {
+        background-image: url("../images/index/companions-desktop@2x.png");
+      }
+  }
+
+  &.-tariffs {
+    background-color: var(--color-tariffs-background);
+    z-index: 7;
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/index/tarrifs-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: calc(50% + 280px) 221px;
+      background-size: 198px auto;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/index/tarrifs-desktop.svg");
+      background-size: 446px auto;
+      background-position: calc(50% + 250px) 300px;
+    }
+  }
+
+  &.-sign-up {
+    background-color: var(--color-sign-up-background);
+    z-index: 6;
+  }
+
+  &.-location {
+    background-color: var(--color-map-background);
+  }
+
+  &.-headline {
+    top: -1px;
+    background-color: var(--color-header-background);
+    border-bottom-right-radius: var(--radius-headline-special);
+    border-bottom-left-radius: var(--radius-headline-special);
+    z-index: 3;
+
+    &.-form {
+      @media (min-width: $desktop-width) {
+        z-index: auto;
+      }
+    }
+
+  }
+
+  &.-countries-filter {
+    width: 100%;
+    position: absolute;
+    background-color: var(--color-country-filter-background);
+    z-index: 2;
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
+  }
+
+
+  &.-alternate {
+    margin-top: 0;
+    margin-bottom: -60px;
+    border-radius: var(--radius-main) var(--radius-main) 0 0;
+
+    &.-profile {
+      margin-top: -60px;
+      background-color: var(--color-profile-background);
+      z-index: 1;
+    }
+
+    &.-my-plans {
+      background-color: var(--color-my-plans-background);
+      z-index: 2;
+    }
+
+    &.-new-plan {
+      background-color: var(--color-text-new-plan-background);
+      z-index: 3;
+    }
+  }
+}
+
+.background-wrapper__substrate {
+  @include resolution-hidden;
+  margin-top: -1px;
+  display: block;
+  width: 100%;
+  height: 61px;
+  background-color: var(--color-header-background);
+  border-bottom-right-radius: var(--radius-main);
+  border-bottom-left-radius: var(--radius-main);
+  position: absolute;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 358px;
+    height: 5px;
+    border-radius: 1em;
+    background-color: #ff8d30;;
+    position: absolute;
+    left: calc(50% - 586px);
+    bottom: -2.5px;
+  }
+}

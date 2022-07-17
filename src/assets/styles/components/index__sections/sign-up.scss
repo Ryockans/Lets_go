@@ -1,0 +1,64 @@
+.sign-up{
+  padding: 72+60px 25px 30px;
+  color: var(--color-text-main);
+  @media (min-width: $tablet-width) {
+    padding: 76+60px 40px 60px;
+  }
+  @media (min-width: $desktop-width){
+    padding: 109+60px 60px 104px;
+  }
+}
+
+.sign-up__headline{
+  margin-bottom: 19px;
+  text-align: center;
+  font: var(--font-index-header);
+  color: var(--color-text-index-header);
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+  @media (min-width: $desktop-width){
+    margin-bottom: 57px;
+  }
+}
+
+.sign-up__text{
+  margin: 0 auto 30px;
+  max-width: 220px;
+  text-align: center;
+  font: var(--font-index-text);
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    max-width: 620px;
+  }
+  @media (min-width: $desktop-width){
+    margin-bottom: 60px;
+  }
+}
+
+.sign-up__link{
+  color: var(--color-text-index-link);
+  text-decoration: underline;
+  &:hover{
+    color: var(--color-text-index-link-hover);
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}
+
+.sign-up__form{
+  margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    margin: 0 36px 60px;
+  }
+  @media (min-width: $desktop-width){
+    margin: 0 73px 70px;
+  }
+}
+
+.sign-up__contacts{
+  @media (min-width: $tablet-width) {
+    @include additional-padding;
+  }
+}

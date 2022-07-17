@@ -1,0 +1,91 @@
+.logo::after{
+  display: block;
+  content: "";
+  background-image: url("../images/common/logo/logo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 15px;
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
+    background-image: url("../images/common/logo/logo-tablet.png");
+  }
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+    background-image: url("../images/common/logo/logo-desktop.png");
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/common/logo/logo-mobile@2x.png");
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/common/logo/logo-tablet@2x.png");
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/common/logo/logo-desktop@2x.png");
+    }
+  }
+}
+
+.logo.-header.-alternate::after{
+  @media (min-width: $desktop-width) {
+    background-image: url("../images/common/logo/logo-desktop.png");
+  }
+  @media (min-resolution: 2dppx) {
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/common/logo/logo-desktop@2x.png");
+    }
+  }
+}
+
+.logo.-header.-scroll::after{
+  background-image: url("../images/common/logo/logo-mobile-blue.png");
+  @media (min-width: $tablet-width) {
+    background-image: url("../images/common/logo/logo-tablet-blue.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../images/common/logo/logo-desktop-blue.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/common/logo/logo-mobile-blue@2x.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/common/logo/logo-tablet-blue@2x.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/common/logo/logo-desktop-blue@2x.png");
+    }
+  }
+}
+
+.logo.-alternate::after{
+  background-image: url("../images/common/logo/logo-mobile-blue.png");
+  @media (min-width: $tablet-width) {
+    background-image: url("../images/common/logo/logo-tablet-blue.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../images/common/logo/logo-desktop-blue.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/common/logo/logo-mobile-blue@2x.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../images/common/logo/logo-tablet-blue@2x.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../images/common/logo/logo-desktop-blue@2x.png");
+    }
+  }
+}
+
+
+
+.logo__image{
+  display: none;
+}

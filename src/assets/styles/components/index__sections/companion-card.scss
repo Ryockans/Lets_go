@@ -1,0 +1,145 @@
+.companion-card{
+  position: relative;
+}
+
+
+.companion-card__level{
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.companion-card__picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  border-top-right-radius: var(--radius-secondary);
+  border-top-left-radius: var(--radius-secondary);
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.companion-card__picture:hover .companion-card__photo{
+  transform: scale(1.2);
+  object-fit: cover;
+}
+
+.companion-card__photo{
+  width: 270px;
+  height: 270px;
+  border-top-right-radius: var(--radius-secondary);
+  border-top-left-radius: var(--radius-secondary);
+  transition-duration: 0.5s;
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.companion-card__description{
+  margin-top: -5px;
+  padding: 27px 36px 20px 46px;
+  max-width: 270px;
+  background-color: var(--color-card-background);
+  border-bottom-right-radius: var(--radius-secondary);
+  border-bottom-left-radius: var(--radius-secondary);
+  position: relative;
+  @media (min-width: $tablet-width) {
+    max-width: 285px;
+  }
+}
+
+.companion-card__flags{
+  margin-top: -39px;
+  margin-bottom: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.companion-card__flag{
+  position: relative;
+  margin: 0 10px;
+  &:first-of-type{
+    margin-left: 0;
+  }
+  &:last-of-type{
+    margin-right: 0;
+  }
+  &:hover{
+    &::before{
+      content: attr(data-hover);
+      width: max-content;
+      padding: 18px 25px;
+      position: absolute;
+      top: 30px;
+      left: -100%;
+      font: var(--font-tooltip);
+      color: var(--color-text-main);
+      background-color: var(--color-tooltip-background);
+    }
+    &::after{
+      content: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.99998 0L11.9501 7.5H0.0498791L5.99998 0Z' fill='%23101D41'/%3E%3C/svg%3E");
+      position: absolute;
+      top: 18px;
+      left: calc(50% - 6px);
+    }
+  }
+}
+
+
+.companion-card__name{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+  font: var(--font-card-header);
+  color: var(--color-text-tertiary);
+  &::before{
+    content: "";
+    display: block;
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-user-offline);
+  }
+  &.-online::before{
+    content: "";
+    display: block;
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-user-online);
+  }
+}
+
+.companion-card__tags-list{
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font: var(--font-card-tags);
+  color: var(--color-text-alternate);
+}
+
+.companion-card__tag{
+  margin-right: 5px;
+  &:last-of-type{
+    margin-right: 0;
+  }
+}
+
+.companion-card__transport-list{
+  margin-left: 75-46px;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  column-gap: 10px;
+}

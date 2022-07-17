@@ -1,0 +1,6 @@
+$radius: 28px;
+$radius-form: 48px;
+$circumference: 3.14*2*$radius;
+@media (min-width: $tablet-width) {
+  $radius-form: 45px;
+}

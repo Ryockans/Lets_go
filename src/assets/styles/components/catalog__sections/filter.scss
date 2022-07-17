@@ -1,0 +1,148 @@
+.filter {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  border-top: 1px solid var(--color-filter-divider);
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  &.-hidden {
+    @media (max-width: $tablet-width - 1px) {
+      padding-bottom: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 28px;
+    }
+  }
+
+  &.filter-range {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 14px;
+      margin-bottom: 37px;
+    }
+  }
+}
+
+.filter__headline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: absolute;
+  text-transform: uppercase;
+  font: var(--font-filter-label);
+  color: var(--color-text-tertiary);
+  @media (min-width: $tablet-width) and (max-width: $desktop-width  - 1px) {
+    width: max-content;
+    top: 12px;
+    &::before {
+      content: ":";
+      position: absolute;
+      right: -10px;
+    }
+  }
+
+  &.-transport {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width  - 1px) {
+      top: 22px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.filter__show {
+  padding-bottom: 2px;
+  border: none;
+  background: none;
+
+  &.-toggled {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width  - 1px) {
+    display: none;
+  }
+}
+
+
+.filter__control {
+  padding-top: 31px;
+  row-gap: 12px;
+  display: grid;
+
+  &.-transport {
+    grid-template-columns: repeat(4, min-content);
+    column-gap: 2px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width  - 1px) {
+    margin-left: 125px;
+    padding-top: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.-hidden {
+
+    @media (max-width: $tablet-width - 1px) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.filter__label {
+  display: flex;
+  align-items: center;
+  font: var(--font-filter-range);
+  position: relative;
+
+  &::before {
+    content: "";
+    margin-right: 9px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-checkbox);
+    border-radius: 4px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.filter__item {
+  display: grid;
+  align-content: center;
+}
+
+.filter__input.-checkbox:checked + .filter__label {
+  &::after {
+    content: url("../images/catalog/icon_check-mark.svg");
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+  }
+}
+
+

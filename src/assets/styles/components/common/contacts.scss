@@ -1,0 +1,197 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font: var(--font-contacts);
+  color: var(--color-text-index-link);
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &.-location{
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &.-special {
+    flex-direction: row;
+  }
+
+  &.-menu {
+    color: var(--color-text-navigation);
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  text-transform: uppercase;
+  color: inherit;
+
+  &.-sign-up {
+    &:hover {
+      color: var(--color-contacts-hover);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &.-menu{
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.contacts__link.-sign-up:hover .contacts__icon-property,
+.contacts__link.-menu:hover .contacts__icon-property {
+  fill: var(--color-contacts-hover);
+}
+
+.contacts__link:active .contacts__icon {
+  opacity: 0.3;
+}
+
+.contacts__icon-wrapper {
+  margin-right: 18px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #121936;
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  &.-menu {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      text-transform: uppercase;
+      color: inherit;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.-phone {
+        background-color: var(--color-phone-icon);
+
+        &:hover {
+          background-color: var(--color-phone-icon-hover);
+        }
+      }
+
+      &.-mail {
+        background-color: var(--color-mail-icon);
+
+        &:hover {
+          background-color: var(--color-mail-icon-hover);
+        }
+      }
+    }
+  }
+
+  &.-special {
+    margin: 0;
+    text-transform: uppercase;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.-phone {
+      background-color: var(--color-phone-icon);
+
+      &:hover {
+        background-color: var(--color-phone-icon-hover);
+      }
+    }
+
+    &.-mail {
+      background-color: var(--color-mail-icon);
+
+      &:hover {
+        background-color: var(--color-mail-icon-hover);
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.contacts__icon {
+
+  &.-menu{
+    width: 20px;
+    height: 20px;
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 27px;
+    }
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &.-sign-up {
+    width: 20px;
+    height: 20px;
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 27px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 30px;
+    }
+  }
+
+  &.-location {
+    width: 20px;
+    height: 20px;
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 27px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 30px;
+    }
+  }
+
+  &.-desktop-menu{
+    @media (max-width: $desktop-width - 1px) {
+      display: none;
+    }
+  }
+}
+
+.contacts__text {
+  &.-menu {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.my-plans{
+  padding: 28px 25px 30+60px;
+  @media (min-width: $tablet-width) {
+    padding: 57px 75px 76+60px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 54px 58px 64+60px  124px ;
+  }
+}
+
+.my-plans__headline{
+  margin-bottom: 29px;
+  font: var(--font-form-headline);
+  color: var(--color-text-tertiary);
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.my-plans__list{
+  display: grid;
+  row-gap: 10px;
+  @media (min-width: $tablet-width) {
+    row-gap: 11px;
+  }
+  @media (min-width: $desktop-width) {
+    row-gap: 15px;
+  }
+}

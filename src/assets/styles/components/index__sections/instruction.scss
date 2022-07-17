@@ -1,0 +1,135 @@
+.instruction {
+  display: grid;
+  grid-template-rows: repeat(4, 80px);
+  font: var(--font-instruction);
+  color: var(--color-text-secondary);
+  @media (min-width: $tablet-width) {
+    grid-template-rows: repeat(2, 140px);
+    grid-template-columns: repeat(2, 344px);
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-rows: min-content;
+    grid-template-columns: 315px 345px 345px 315px;
+  }
+}
+
+.instruction__item {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  height: 160px;
+  border-radius: var(--radius-secondary);
+
+  &:first-of-type {
+    background-color: var(--color-instruction-first);
+    @media (min-width: $tablet-width) {
+      width: 376px;
+      border-bottom-left-radius: 0;
+    }
+    @media (min-width: $desktop-width) {
+      width: 345px;
+      border-bottom-left-radius: var(--radius-secondary);
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  &:nth-of-type(2) {
+    background-color: var(--color-instruction-second);
+    @media (min-width: $tablet-width) {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    @media (min-width: $desktop-width) {
+      border-bottom-left-radius: var(--radius-secondary);
+      border-top-right-radius: 0;
+    }
+  }
+
+  &:nth-of-type(3) {
+    background-color: var(--color-instruction-third);
+    @media (min-width: $tablet-width) {
+      width: 375px;
+      border-top-left-radius: 0;
+    }
+    @media (min-width: $desktop-width) {
+      border-top-left-radius: var(--radius-secondary);
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+
+  &:last-of-type {
+    background-color: var(--color-instruction-fourth);
+    height: 80px;
+    @media (min-width: $tablet-width) {
+      height: 140px;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+    @media (min-width: $desktop-width) {
+      width: 315px;
+      height: 107px;
+      border-top-right-radius: var(--radius-secondary);
+      border-top-left-radius: var(--radius-secondary);
+    }
+  }
+
+
+  @media (min-width: $tablet-width) {
+    width: 344px;
+    height: 140px;
+    display: grid;
+    grid-template-rows: min-content;
+  }
+  @media (min-width: $desktop-width) {
+    width: 375px;
+    height: 107px;
+    display: flex;
+  }
+}
+
+.instruction__item:last-of-type .instruction__number {
+  @media (min-width: $desktop-width) {
+    margin-right: 33px;
+  }
+}
+
+.instruction__text {
+  padding-left: 24px;
+  padding-top: 22px;
+  max-width: 140px;
+  @media (min-width: 500px) {
+    max-width: 270px;
+  }
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    padding-top: 31px;
+    padding-bottom: 10px;
+    max-width: 215px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
+    padding-bottom: initial;
+    max-width: 230px;
+  }
+}
+
+.instruction__number {
+  margin-top: 22px;
+  margin-right: 21px;
+  color: var(--color-text-main);
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 33px;
+    align-self: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+    margin-left: 0;
+    margin-right: 62px;
+  }
+
+}

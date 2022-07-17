@@ -1,0 +1,42 @@
+.flag{
+  @include country-flag;
+  &.-sri-lanka{
+    background-image: url("../images/common/flag-sri-lanka.png");
+  }
+  &.-thailand{
+    background-image: url("../images/common/flag-thailand.png");
+  }
+  &.-seychelles{
+    background-image: url("../images/common/flag-seychelles.png");
+  }
+  &.-australia{
+    background-image: url("../images/common/flag-australia.png");
+  }
+  &.-belgium{
+    background-image: url("../images/common/flag-belgium.png");
+  }
+  &.-bosnia{
+    background-image: url("../images/common/flag-bosnia.png");
+  }
+  &.-czech{
+    background-image: url("../images/common/flag-czech.png");
+  }
+  &.-dominica{
+    background-image: url("../images/common/flag-dominica.png");
+  }
+  &.-france{
+    background-image: url("../images/common/flag-france.png");
+  }
+  &.-germany{
+    background-image: url("../images/common/flag-germany.png");
+  }
+  &.-uk{
+    background-image: url("../images/common/flag-uk.png");
+  }
+  &.-usa{
+    background-image: url("../images/common/flag-usa.png");
+  }
+  &.-form{
+    @include form-flag;
+  }
+}

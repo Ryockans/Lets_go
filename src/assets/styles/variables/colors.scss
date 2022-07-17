@@ -1,0 +1,223 @@
+:root {
+  --color-black: #000000;
+  --color-black-transparent: rgba(0, 0, 0, 0.6);
+  --color-transparent-black: rgba(0, 0, 0, 0.1);
+  --color-black-transparent-shadow: rgba(0, 0, 0, 0.14);
+  --color-black-invisible: rgba(0, 0, 0, 0.05);
+  --color-blue-midnight-express-dark: #101D41;
+  --color-blue-midnight: #132576;
+  --color-blue-midnight-express: #161C35;
+  --color-blue-midnight-express-light: #182044;
+  --color-blue-midnight-express-lighter: #192144;
+  --color-blue-midnight-express-transparent: rgba(22, 28, 53, 0.3);
+  --color-blue-catalina: #1D2E5B;
+  --color-blue-catalina-transparent: rgba(29, 46, 91, 0.2);
+  --color-blue-rock: #959BB2;
+  --color-blue-solitude: #EDEFF6;
+  --color-blue-solitude-approx: #E6E8F1;
+  --color-blue-solitude-darker: #E1E3E9;
+  --color-blue-solitude-alternate: #E2E5F1;
+  --color-blue-hawkes: #DFE3F0;
+  --color-blue-hawkes-alternate: #D6D9E6;
+  --color-blue-hawkes-darker: #D4D9EB;
+  --color-blue-hawkes-approx: #D6DAED;
+  --color-blue-hawkes-darkest: #D1D7E9;
+  --color-blue-echo: #B9BBC2;
+  --color-link-water: #CBCED9;
+  --color-link-water-transparent: rgba(203, 206, 217, 0.3);
+  --color-lavender: #E2E5F2;
+  --color-perwinkle: #C8CEE8;
+  --color-green-lawn: #81E31E;
+  --color-golden-dream: #F3C72B;
+  --color-yellow-energy: #FFD74B;
+  --color-yellow-lightning: #FFA530;
+  --color-yellow-supernova: #FFBD30;
+  --color-orange-neon-carrot: #FF8D30;
+  --color-oranhe-burnt: #F26926;
+  --color-orange-outrageous: #FF5C23;
+  --color-red-orange: #F02323;
+  --color-red-light-coral: #F47E7E;
+  --color-red-salmon: #F97676;
+  --color-tutu: #F9EAEA;
+  --color-remy: #F9D8D8;
+  --color-grey-charcoal: #444444;
+  --color-grey-charcoal-transparent: rgba(68, 68, 68, 0.3);
+  --color-grey-charcoal-transparent-darker: rgba(68, 68, 68, 0.5);
+  --color-grey-very-light: #C7C7C7;
+  --color-grey-mischka: #AFB0B5;
+  --color-grey-lighter: #CCCCCC;
+  --color-grey-noble: #999999;
+  --color-grey-whisper: #E5E5E5;
+  --color-white-ghost: #F3F4F8;
+  --color-white: #FFFFFF;
+  --color-white-transparent: rgba(255, 255, 255, 0.3);
+
+  --color-text-main: var(--color-white);
+  --color-text-secondary: var(--color-blue-midnight-express);
+  --color-text-tertiary: var(--color-blue-catalina);
+  --color-text-navigation: var(--color-blue-midnight-express-lighter);
+  --color-text-navigation-hover: var(--color-yellow-energy);
+  --color-text-index-header: var(--color-orange-neon-carrot);
+  --color-text-alternate: var(--color-grey-charcoal);
+  --color-text-counter: var(--color-blue-echo);
+  --color-text-card-header: var(--color-black);
+  --color-text-card-caption: var(--color-grey-very-light);
+  --color-text-index-link: var(--color-yellow-energy);
+  --color-text-index-link-hover: var(--color-orange-neon-carrot);
+  --color-text-form-input: var(--color-grey-charcoal);
+  --color-text-placeholder: var(--color-grey-charcoal-transparent);
+  --color-text-placeholder-hover: var(--color-grey-charcoal-transparent-darker);
+  --color-text-tags: var(--color-grey-charcoal-transparent);
+  --color-text-plan-change: var(--color-black-transparent);
+  --color-indication-text: var(--color-black);
+
+  --color-header-background: var(--color-blue-midnight-express);
+  --color-header-menu-background: var(--color-white);
+  --color-promo-background: var(--color-blue-midnight-express);
+  --color-about-background: var(--color-blue-midnight-express-lighter);
+  --color-directions-background: var(--color-blue-solitude);
+  --color-companions-background: var(--color-blue-midnight-express-lighter);
+  --color-tariffs-background: var(--color-blue-solitude-approx);
+  --color-sign-up-background: var(--color-blue-midnight-express-lighter);
+  --color-map-background: var(--color-yellow-energy);
+  --color-footer-background: var(--color-white);
+  --color-profile-background: var(--color-blue-solitude);
+  --color-my-plans-background: var(--color-blue-hawkes);
+  --color-text-new-plan-background: var(--color-blue-hawkes-darker);
+  --color-country-filter-background: var(--color-lavender);
+  --color-country-filter-substrate: var(--color-lavender);
+  --color-catalog-background: var(--color-blue-solitude);
+  --color-filters-background: var(--color-yellow-energy);
+  --color-modal-background: var(--color-white);
+  --color-tooltip-background: var(--color-blue-midnight-express-dark);
+
+  --color-sign-up-focus: var(--color-blue-midnight-express-lighter);
+  --color-sign-up-focus-border: var(--color-white);
+
+  --color-phone-icon: var(--color-orange-neon-carrot);
+  --color-phone-icon-hover: var(--color-oranhe-burnt);
+  --color-mail-icon: var(--color-yellow-supernova);
+  --color-mail-icon-hover: var(--color-orange-neon-carrot);
+
+  --color-instruction-first: var(--color-orange-neon-carrot);
+  --color-instruction-second: var(--color-yellow-lightning);
+  --color-instruction-third: var(--color-yellow-supernova);
+  --color-instruction-fourth: var(--color-yellow-energy);
+
+  --color-card-background: var(--color-white);
+
+  --color-button: var(--color-yellow-energy);
+  --color-button-hover: var(--color-yellow-supernova);
+  --color-button-outlined-hover: var(--color-blue-midnight-express-lighter);
+  --color-button-outlined-text-hover: var(--color-white-transparent);
+  --color-button-border: var(--color-blue-midnight-express-lighter);
+  --color-button-active-text: var(--color-blue-midnight-express-transparent);
+  --color-button-alternate: var(--color-blue-hawkes);
+  --color-button-alternate-hover: var(--color-blue-hawkes-darkest);
+  --color-button-catalog: var(--color-blue-hawkes-approx);
+  --color-button-modal: var(--color-white-ghost);
+  --color-button-modal-hover: var(--color-blue-solitude);
+  --color-button-modal-text-active: var(--color-blue-catalina-transparent);
+
+  --color-user-level-divider: var(--color-white-transparent);
+  --color-user-level-divider-form: var(--color-grey-charcoal-transparent);
+  --color-user-level-background: var(--color-black-transparent);
+
+  --color-user-online: var(--color-green-lawn);
+  --color-user-offline: var(--color-red-salmon);
+
+  --color-tariffs-first: var(--color-orange-neon-carrot);
+  --color-tariffs-second: var(--color-yellow-supernova);
+  --color-tariffs-third: var(--color-yellow-energy);
+  --color-tariffs-button: var(--color-blue-midnight);
+  --color-tariffs-border: var(--color-blue-solitude-darker);
+
+  --color-contacts-hover: var(--color-yellow-supernova);
+  --color-media-link: var(--color-yellow-energy);
+  --color-media-link-hover: var(--color-yellow-supernova);
+
+  --color-modal-divider: var(--color-black-invisible);
+
+  --color-form-field-border: var(--color-link-water);
+
+  --color-plan-card-divider: var(--color-link-water-transparent);
+
+  --color-form-divider: var(--color-blue-solitude-darker);
+  --color-form-unit: var(--color-grey-charcoal-transparent);
+  --color-form-input-border: var(--color-link-water);
+  --color-form-delete-button: var(--color-blue-solitude);
+  --color-form-delete-cross: var(--color-black);
+  --color-form-delete-button-toggled: var(--color-white);
+  --color-form-add-country-background: var(--color-blue-solitude);
+  --color-form-add-country-hover-background: var(--color-blue-hawkes);
+  --color-form-select-toggled: var(--color-blue-catalina);
+  --color-plus-button: var(--color-grey-lighter);
+  --color-plus-button-hover: var(--color-grey-noble);
+  --color-plus-button-active: var(--color-grey-whisper);
+  --color-add-button: var(--color-black);
+  --color-indication: var(--color-blue-catalina);
+
+  --color-calendar-month-border: var(--color-blue-hawkes-alternate);
+  --color-calendar-grid: var(--color-blue-hawkes-alternate);
+  --color-calendar-chosen: var(--color-blue-catalina);
+  --color-calendar-day: var(--color-blue-solitude);
+  --color-calendar-text-disabled: var(--color-grey-charcoal-transparent);
+  --color-calendar-border-hover: var(--color-orange-outrageous);
+
+  --color-countries-filter-text: var(--color-blue-midnight-express-lighter);
+  --color-country-chosen: var(--color-blue-catalina);
+
+  --color-checkbox: var(--color-white);
+  --color-input-hover-border: var(--color-blue-rock);
+  --color-input-focus-border: var(--color-blue-midnight-express);
+  --color-checkbox-form-hover: var(--color-blue-solitude-alternate);
+  --color-checkbox-border: var(--color-link-water);
+  --color-filter-divider: var(--color-golden-dream);
+  --color-filter-range: var(--color-blue-catalina);
+  --color-filter-range-scale: var(--color-blue-catalina-transparent);
+  --color-filter-range-bar: var(--color-blue-catalina);
+  --color-filter-button-active: var(--color-golden-dream);
+  --color-filter-button-active-text: var(--color-blue-midnight-express-transparent);
+  --color-countries-filter-close-hover: var(--color-perwinkle);
+
+  --color-catalog-input-background: var(--color-white);
+  --color-catalog-input-hover: var(--color-blue-rock);
+  --color-catalog-input-focus: var(--color-blue-midnight-express);
+
+  --color-catalog-filter-button: var(--color-white);
+  --color-catalog-button-text: var(--color-black);
+  --color-catalog-like-counter: var(--color-black);
+  --color-catalog-like: var(--color-blue-solitude);
+  --color-catalog-like-hover: var(--color-lavender);
+  --color-catalog-like-checked: var(--color-tutu);
+  --color-catalog-like-heart: var(--color-red-orange);
+  --color-catalog-like-checked-hover: var(--color-remy);
+  --color-catalog-transport: var(--color-blue-solitude);
+  --color-catalog-divider: var(--color-blue-solitude);
+  --color-catalog-user-level-divider: var(--color-transparent-black);
+  --color-catalog-user-level-text: var(--color-black);
+  --color-pagination-current: var(--color-yellow-energy);
+
+  --color-shadow-main: var(--color-black-transparent-shadow);
+
+}
+
+@media (min-width: $tablet-width) {
+  :root{
+    --color-header-background: var(--color-blue-midnight-express-light);
+    --color-promo-background: var(--color-blue-midnight-express-light);
+    --color-tariffs-background: var(--color-blue-solitude);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  :root {
+    --color-header-background: var(--color-blue-midnight-express);
+    --color-promo-background:var(--color-blue-midnight-express);
+    --color-text-navigation: var(--color-white);
+    --color-country-filter-background: var(--color-blue-solitude);
+  }
+}
+
+
+

@@ -1,0 +1,415 @@
+.choose-country {
+  display: grid;
+  background-color: var(--color-card-background);
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+    grid-template-columns: max-content;
+  }
+
+  &.-catalog {
+    @media (min-width: $tablet-width) {
+      box-shadow: none;
+      background-color: transparent;
+    }
+    @media (min-width: $desktop-width) {
+      margin-top: 17px;
+    }
+  }
+}
+
+.choose-country__table {
+  border-collapse: collapse;
+  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    margin: 35px 75px 33px 27px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 18px 86px 12px 10px;
+    border-spacing: 16px 14px;
+    border-collapse: separate;
+  }
+
+  &.-catalog {
+    @media (min-width: $tablet-width) {
+      margin: -25px 0 0;
+      border-collapse: separate;
+      border-spacing: 16px 14px;
+    }
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.choose-country__table.-catalog .choose-country__letter {
+  font: var(--font-countries-filter-table);
+  border: none;
+
+  &.-chosen {
+    background-color: var(--color-country-chosen);
+    color: var(--color-text-main);
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+      color: var(--color-text-tertiary);
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
+  }
+}
+
+.choose-country__letter {
+  width: 44px;
+  height: 42px;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--color-text-tertiary);
+  font: var(--font-caledar-days);
+  border: 1px solid var(--color-calendar-grid);
+
+  &.-chosen {
+    background: #EDEFF6;
+    @media (min-width: $tablet-width) {
+      background: #1D2E5B;
+      color: var(--color-text-main);
+    }
+  }
+
+  &:hover{
+    @media (min-width: $desktop-width) {
+      border: 1px solid #959BB2;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 53px;
+    height: 70px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    border-radius: var(--radius-form-input);
+  }
+}
+
+.choose-country__variants {
+  padding: 20px 19px;
+  width: 221px;
+  font: var(--font-step-text);
+  color: var(--color-text-alternate);
+  border: 1px solid var(--color-calendar-grid);
+  border-top: none;
+  @media (min-width: $tablet-width) {
+    width: 209px;
+    height: 100%;
+    grid-column: 2/3;
+    padding: 35px 25px 33px;
+    border-bottom: none;
+    border-right: none;
+    overflow: auto;
+  }
+  @media (min-width: $desktop-width) {
+    width: 241px;
+  }
+
+  &.-catalog {
+    width: 100%;
+    background: var(--color-country-filter-background);
+    border: none;
+    padding-left: 0;
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-left: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0 0px 0 90px ;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 10px;
+      grid-template-rows: 1fr;
+      row-gap: 50px;
+    }
+  }
+}
+
+.choose-country__variants.-catalog .choose-country__list {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
+  &.-chosen {
+    @media (min-width: $tablet-width) {
+      row-gap: 5px;
+    }
+  }
+
+  &.-a {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "А";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-b {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Б";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-v {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "В";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-g {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Г";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-d {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Д";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-e {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Е";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-z {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "З";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-i {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "И";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-k {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "К";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-l {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Л";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-m {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "М";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-n {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Н";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-o {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "О";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-p {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "П";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-r {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Р";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-s {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "С";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-t {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Т";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-u {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "У";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-f {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Ф";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-h {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Х";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-ch {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Ч";
+        @include catalog-letter;
+      }
+    }
+  }
+  &.-sh {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Ш";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-b {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Б";
+        @include catalog-letter;
+      }
+    }
+  }
+  &.-ae {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Э";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-yu {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Ю";
+        @include catalog-letter;
+      }
+    }
+  }
+
+  &.-ya {
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "Я";
+        @include catalog-letter;
+      }
+    }
+  }
+}
+
+.choose-country__list {
+  display: none;
+
+  &.-chosen {
+    display: grid;
+  }
+}
+
+.choose-country__item{
+  cursor: pointer;
+  &:hover{
+    color: var(--color-text-tertiary);
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+}
+
+
+.choose-country__link {
+  color: inherit;
+}

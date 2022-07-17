@@ -1,0 +1,19 @@
+@mixin tariff-number{
+  padding-bottom: 4px;
+  height: 34-4px;
+  width: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    top: 0;
+    padding-bottom: 0;
+    height: 68px;
+    width: 68px;
+    justify-self: start;
+  }
+}

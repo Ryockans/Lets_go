@@ -1,0 +1,8 @@
+@mixin catalog-letter{
+  margin-bottom: 30px;
+  display: block;
+  width: min-content;
+  height: 60px;
+  font: var(--font-countries-filter-table);
+  color: var(--color-text-tertiary);
+}
