@@ -13,9 +13,11 @@
 <header class="page__header">
   <div class="header container">
     <a href="index.html" class="header__logo logo -header"></a>
+
     <button class="header__button" type="button" onclick="showMenu(menuIndex)">
       <span class="visually-hidden">Открыть меню</span>
     </button>
+
     <nav class="header__navigation -resolution-hidden">
       <ul class="navigation">
         <li class="navigation__item">
@@ -42,11 +44,9 @@
       Авторизация
     </a>
 
-
     <div class="header__contacts  contacts -menu -resolution-hidden">
       <a class="contacts__link " href="tel:+78005558628">
         <p class="contacts__icon-wrapper -phone -menu">
-
           <svg class="contacts__icon  -menu" width="36" height="34" viewBox="0 0 36 34" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path class="contacts__icon-property" fill-rule="evenodd" clip-rule="evenodd"
@@ -56,13 +56,12 @@
 
           <img class="contacts__icon -desktop-menu" width="18" height="18" src="assets/images/index/icon_call.svg"
                alt="иконка звонящего телефона">
-
         </p>
+
         <span class="contacts__text -menu">8 800 555-86-28</span>
       </a>
       <a class="contacts__link " href="mailto:mail@htmlacademy.ru">
         <p class="contacts__icon-wrapper -mail -menu">
-
           <svg class="contacts__icon -menu" width="37" height="26" viewBox="0 0 37 26" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path class="contacts__icon-property" fill-rule="evenodd" clip-rule="evenodd"
@@ -72,12 +71,11 @@
 
           <img class="contacts__icon -desktop-menu" width="18" height="18" src="assets/images/index/icon_mail.svg"
                alt="иконка конверта">
-
         </p>
+
         <span class="contacts__text -menu">mail@htmlacademy.ru</span>
       </a>
     </div>
-
 
     <ul class="header__media media -resolution-hidden">
       <li class="media__item">
@@ -98,7 +96,6 @@
         </a>
       </li>
     </ul>
-
   </div>
 
 </header>
@@ -126,27 +123,36 @@
               cy="30"
           />
         </svg>
+
         <p class="user-level__number -form">80</p>
+
         <p class="user-level__text -form">level</p>
       </div>
+
       <picture>
         <source media="(min-width: 1440px)" srcset="assets/images/form/photo-desktop.jpg 1x, assets/images/form/photo-desktop@2x.jpg 2x">
+
         <img class="profile__avatar" src="assets/images/form/photo.jpg" width="100" height="100"
           srcset="assets/images/form/photo@2x.jpg 2x"
              alt="Фото пользователя">
       </picture>
+
       <button class="profile__button button -change">
         <span class="button__text -predesktop"> сменить </span> фото
       </button>
+
       <div class="profile__tags">
         <label for="profile__tags" class="profile__legend -tags">тэги</label>
         <textarea id="profile__tags" class="profile__tags-area">#бургер #бар #футбол #концерт #крафт</textarea>
       </div>
+
       <div class="profile__transports">
         <h2 class="profile__legend -transport">транспорт</h2>
+
         <ul class="profile__transport-list">
           <li class="profile__transport transport -form" data-hover="Авиаперелет">
             <input type="checkbox" id="checkbox-plane" class="visually-hidden transport__checkbox" checked>
+
             <label class="transport__label" for="checkbox-plane">
               <img class="transport__icon" src="assets/images/catalog/icon_plane.svg" alt="иконка самолета" width="17"
                    height="16">
@@ -155,6 +161,7 @@
 
           <li class="profile__transport transport -form" data-hover="Автотранспорт">
             <input type="checkbox" id="checkbox-car" class="visually-hidden transport__checkbox" checked>
+
             <label class="transport__label" for="checkbox-car">
               <img class="transport__icon" src="assets/images/catalog/icon_bus.svg" alt="иконка автобуса" width="17"
                    height="16">
@@ -163,6 +170,7 @@
 
           <li class="profile__transport transport -form" data-hover="Велосипед">
             <input type="checkbox" id="checkbox-bike" class="visually-hidden transport__checkbox">
+
             <label class="transport__label" for="checkbox-bike">
               <img class="transport__icon" src="assets/images/catalog/icon_bicycle.svg" alt="иконка велосипеда"
                    width="17"
@@ -172,6 +180,7 @@
 
           <li class="profile__transport transport -form" data-hover="Пешком">
             <input type="checkbox" id="checkbox-by-feet" class="visually-hidden transport__checkbox" checked>
+
             <label class="transport__label" for="checkbox-by-feet">
               <img class="transport__icon" src="assets/images/catalog/icon_run.svg" alt="иконка бегущего человечка"
                    width="17" height="16">
@@ -185,6 +194,7 @@
   <div class="background-wrapper -alternate -my-plans">
     <section class="my-plans container">
       <h2 class="my-plans__headline">Мои планы</h2>
+
       <ul class="my-plans__list">
         <li class="my-plans__item">
           <div class="plan-card">
@@ -192,8 +202,11 @@
               <span class="plan-card__number">1.</span>
               Франция, Италия
             </h3>
+
             <p class="plan-card__text -companions">3 попутчика</p>
+
             <p class="plan-card__text -date">26 мар — 29 мар</p>
+
             <button class="plan-card__change" type="button">Изменить</button>
           </div>
         </li>
@@ -204,8 +217,11 @@
               <span class="plan-card__number">2.</span>
               Таиланд, Индонезия
             </h3>
+
             <p class="plan-card__text -companions">1 попутчик</p>
+
             <p class="plan-card__text -date">1 июл — 15 июл</p>
+
             <button class="plan-card__change" type="button">Изменить</button>
           </div>
         </li>
@@ -216,26 +232,33 @@
   <div class="background-wrapper -alternate -new-plan">
     <section class="new-plan container">
       <h2 class="new-plan__headline">Добавить план</h2>
+
       <form class="new-plan__form" id="new-plan__form">
         <div class="step -first -current" id="step-one">
           <h3 class="step__headline">Шаг 1.
             <span class="step__headline-desc">Даты пребывания</span>
           </h3>
+
           <p class="step__text">Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
 
           <ul class="step__indication indication">
             <li class="indication__item -current" data-desktop="Даты"></li>
+
             <li class="indication__item" data-desktop="Маршрут"></li>
+
             <li class="indication__item" data-desktop="Развлечения"></li>
           </ul>
 
           <div class="step__controls control">
             <div class="control__item">
               <label class="control__label -companions" for="step-one__companions">Ищу попутчиков:</label>
+
               <div class="control__field">
                 <button class="control__button -minus" type="button"></button>
+
                 <input class="control__input -companions" id="step-one__companions" type="number" value="2">
+
                 <button class="control__button -plus" type="button"></button>
               </div>
 
@@ -243,9 +266,12 @@
 
             <div class="control__item">
               <label class="control__label -duration" for="step-one__duration">Длительность:</label>
+
               <div class="control__field">
                 <button class="control__button -minus" type="button"></button>
+
                 <input class="control__input -duration" id="step-one__duration" type="number" value="3">
+
                 <button class="control__button -plus" type="button"></button>
               </div>
 
@@ -253,44 +279,56 @@
 
             <div class="control__item">
               <input class="control__input -children" id="step-one__children" type="checkbox" checked>
+
               <label class="control__label -children" for="step-one__children">Можно с детьми</label>
             </div>
 
             <div class="control__item">
               <label class="control__label visually-hidden" for="step-one__month">Выберите месяц</label>
+
               <div class="control__field">
                 <button class="control__button -backward" type="button">
                   <img class="control__icon" src="assets/images/form/icon-backward.svg" alt="предыдущий месяц">
                 </button>
+
                 <input class="control__input -month" type="month" id="step-one__month" value="2019-03">
+
                 <button class="control__button -forward" type="button">
                   <img class="control__icon" src="assets/images/form/icon-forward.svg" alt="следующий месяц">
                 </button>
               </div>
+
               <table class="control__calendar calendar">
                 <tr class="calendar__week">
                   <th class="calendar__day-name">П
                     <span class="calendar__day-letter">н</span>
                   </th>
+
                   <th class="calendar__day-name">В
                     <span class="calendar__day-letter">т</span>
                   </th>
+
                   <th class="calendar__day-name">С
                     <span class="calendar__day-letter">р</span>
                   </th>
+
                   <th class="calendar__day-name">Ч
                     <span class="calendar__day-letter">т</span>
                   </th>
+
                   <th class="calendar__day-name">П
                     <span class="calendar__day-letter">т</span>
                   </th>
+
                   <th class="calendar__day-name -weekend">С
                     <span class="calendar__day-letter">б</span>
                   </th>
+
                   <th class="calendar__day-name -weekend">В
                     <span class="calendar__day-letter">с</span>
                   </th>
                 </tr>
+
                 <tr class="calendar__week">
                   <td class="calendar__day -disabled">23</td>
                   <td class="calendar__day -disabled">24</td>
@@ -300,6 +338,7 @@
                   <td class="calendar__day -disabled">28</td>
                   <td class="calendar__day -march -disabled ">1</td>
                 </tr>
+
                 <tr class="calendar__week">
                   <td class="calendar__day -disabled">2</td>
                   <td class="calendar__day -disabled">3</td>
@@ -309,6 +348,7 @@
                   <td class="calendar__day -disabled">7</td>
                   <td class="calendar__day -disabled">8</td>
                 </tr>
+
                 <tr class="calendar__week">
                   <td class="calendar__day -disabled">9</td>
                   <td class="calendar__day -disabled">10</td>
@@ -318,6 +358,7 @@
                   <td class="calendar__day -disabled">14</td>
                   <td class="calendar__day -disabled">15</td>
                 </tr>
+
                 <tr class="calendar__week">
                   <td class="calendar__day -disabled">16</td>
                   <td class="calendar__day -disabled">17</td>
@@ -327,6 +368,7 @@
                   <td class="calendar__day -disabled">21</td>
                   <td class="calendar__day -disabled">22</td>
                 </tr>
+
                 <tr class="calendar__week">
                   <td class="calendar__day -disabled">23</td>
                   <td class="calendar__day -disabled">24</td>
@@ -336,6 +378,7 @@
                   <td class="calendar__day -chosen -last">28</td>
                   <td class="calendar__day">29</td>
                 </tr>
+
                 <tr class="calendar__week">
                   <td class="calendar__day">30</td>
                   <td class="calendar__day">31</td>
@@ -348,6 +391,7 @@
               </table>
             </div>
           </div>
+
           <a href="#step-two" class="button -next-step" type="button" onclick="formStep(1)">
             Следующий шаг
             <svg class="button__icon" width="12" height="14" viewBox="0 0 12 14" fill="none"
@@ -1339,7 +1383,6 @@
       </form>
     </section>
   </div>
-
 </main>
 
 <footer class="page__footer">
